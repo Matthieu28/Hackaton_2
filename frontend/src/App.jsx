@@ -16,7 +16,7 @@ function App() {
       <NavBar />
       <main>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/Home" element={<Home />} />
           <Route path="/login" element={<Login />} />
           {currentUser.id && <Route path="/makes" element={<MakeList />} />}
           <Route path="/map" element={<Map />} />
