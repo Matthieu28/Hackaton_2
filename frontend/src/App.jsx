@@ -8,6 +8,7 @@ import Map from "@pages/Map/Map";
 import { useCurrentUserContext } from "./contexts/CurrentUserContext";
 
 import "./App.css";
+import Register from "@pages/Register";
 
 function App() {
   const { currentUser } = useCurrentUserContext();
@@ -21,6 +22,7 @@ function App() {
           {currentUser.id && <Route path="/makes" element={<MakeList />} />}
           <Route path="/map" element={<Map />} />
           <Route path="*" element={<p>404 Not Found</p>} />
+          <Route path="/Register" element={<Register />} />
         </Routes>
       </main>
     </div>
