@@ -40,6 +40,29 @@ INSERT INTO `make` VALUES (1,'Honda','https://www.cars-data.com/design/images/ca
 /*!40000 ALTER TABLE `make` ENABLE KEYS */;
 UNLOCK TABLES;
 
+-- Table structure for table `vtype`
+--
+
+DROP TABLE IF EXISTS `vtype`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `vtype` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `vtype`
+--
+
+LOCK TABLES `vtype` WRITE;
+/*!40000 ALTER TABLE `vtype` DISABLE KEYS */;
+INSERT INTO `vtype` VALUES (1,'civil'), (2,'van'), (3,'voyage');
+/*!40000 ALTER TABLE `vtype` ENABLE KEYS */;
+UNLOCK TABLES;
+
 --
 -- Table structure for table `user`
 --
@@ -49,10 +72,11 @@ DROP TABLE IF EXISTS `user`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `user` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `firstname` varchar(100) DEFAULT NULL,
-  `lastname` varchar(100) DEFAULT NULL,
+  `name` varchar(100) DEFAULT NULL,
   `email` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
+  `customer` tinyint(1) NOT NULL,
+  `seller` tinyint(1) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `email` (`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -76,16 +100,20 @@ DROP TABLE IF EXISTS `vehicle`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `vehicle` (
   `id` int NOT NULL AUTO_INCREMENT,
+  `kilometrage` int NOT NULL,
+  `fiche` varchar(500) NOT NULL,
+  `lieu` varchar(100) NOT NULL,
+  `datedispo` date,
+  `place` int NOT NULL,
   `model` varchar(100) NOT NULL,
-  `manufactureYear` int unsigned NOT NULL,
-  `engineSize` int unsigned NOT NULL,
-  `fuelType` enum('GASOLINE','DIESEL','HYBRID','ELECTRICITY','HYDROGEN','COMPRESSED_NATURAL_GAS') DEFAULT NULL,
-  `weight` int unsigned DEFAULT NULL,
   `makeId` int NOT NULL,
+  `vtypeId` int NOT NULL,
   `image` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `makeId` (`makeId`),
-  CONSTRAINT `vehicle_ibfk_1` FOREIGN KEY (`makeId`) REFERENCES `make` (`id`)
+  CONSTRAINT `vehicle_ibfk_1` FOREIGN KEY (`makeId`) REFERENCES `make` (`id`),
+  KEY `vtypeId` (`vtypeId`),
+  CONSTRAINT `vehicle_ibfk_2` FOREIGN KEY (`vtypeId`) REFERENCES `vtype` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -95,7 +123,7 @@ CREATE TABLE `vehicle` (
 
 LOCK TABLES `vehicle` WRITE;
 /*!40000 ALTER TABLE `vehicle` DISABLE KEYS */;
-INSERT INTO `vehicle` VALUES (1,'Mustang Fastback',2015,2300,'GASOLINE',1715,2,'https://www.americancarcity.fr/wp-content/uploads/2020/09/Ford-Mustang-GT-2015-152.jpg'),(2,'Mustang Fastback GT',2018,5000,'GASOLINE',1882,2,'https://www.largus.fr/images/images/2018-ford-mustang-1.jpg'),(3,'E',2020,100,'ELECTRICITY',1524,1,'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Honda_e.jpg/1200px-Honda_e.jpg'),(4,'CR-Z',2010,1500,'HYBRID',1119,1,'https://www.largus.fr/images/images/Honda_CRZ_04.jpg'),(5,'CR-Z',2013,1500,'HYBRID',1131,1,'https://www.autoscout24.fr/assets/auto/images/model/honda/honda-cr-z/honda-cr-z-l-01.jpg'),(6,'S-2000',2004,2000,'GASOLINE',1220,1,'https://i.ytimg.com/vi/gphmJ70av2M/sddefault.jpg'),(7,'NSX',1997,3200,'GASOLINE',1370,1,'https://www.motorlegend.com/modules/breve/photos/high/honda-nsx-20960-1-P.jpg'),(8,'CIVIC IX',2015,1800,'GASOLINE',1197,1,'https://www.automobile-magazine.fr/asset/cms/840x394/10597/config/10064/cette-generation-de-civic-nest-toujours-disponible-quen-berline-cinq-portes-ou-break-mais-elle-continue-a-masquer-ses-poignees-de-portes-arriere-dans-les-montants.jpg'),(9,'CIVIC X Type-R',2017,2000,'GASOLINE',1380,1,'https://cache.motorsdb.com/resize/1600x1067/archives/2020/09/25/Honda-Civic-X-Type-R-Limited-Edition-2020-82181.jpg'),(10,'Yaris',2020,1500,'HYBRID',1015,3,'https://content.presspage.com/uploads/1523/1920_yaris-6.jpg');
+INSERT INTO `vehicle` VALUES (1, 49000, "blablabla car", "La Loupe", "2023-01-20", 4, "Voiture de ouf", 1, 2, "https://www.auto-moto.com/wp-content/uploads/sites/9/2022/02/01-peugeot-208-750x410.jpg"),(2, 49000, "blablabla car 2", "La Loupe", "2023-01-20", 4, "Voiture de ouf", 1, 3, "https://www.auto-moto.com/wp-content/uploads/sites/9/2022/02/01-peugeot-208-750x410.jpg"),(3, 49000, "blablabla car", "La Loupe", "2023-01-20", 4, "Voiture de ouf", 1, 1, "https://www.auto-moto.com/wp-content/uploads/sites/9/2022/02/01-peugeot-208-750x410.jpg");
 /*!40000 ALTER TABLE `vehicle` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
