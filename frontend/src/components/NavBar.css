@@ -1,0 +1,22 @@
+ul.navbar {
+  display: flex;
+  background-color: cornsilk;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+ul.navbar li {
+  list-style: none;
+  padding: 0.5rem 1rem;
+}
+
+ul.navbar li a {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+}
+
+ul.navbar li:has(a.active) {
+  color: white;
+  background-color: antiquewhite;
+}
