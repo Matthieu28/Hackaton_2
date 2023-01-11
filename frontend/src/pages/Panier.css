@@ -1,0 +1,30 @@
+.panier{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.titrePanier {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  color: white;
+  border-bottom: solid 1px white;
+  border-width: 20%;
+}
+
+.imageTest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6.5em;
+    width: 50%;
+    height: 10em;
+}
+
+.nomVoiture {
+    color: white;
+    display: flex;
+    text-align: center;
+}
