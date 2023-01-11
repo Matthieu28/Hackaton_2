@@ -1,8 +1,23 @@
 ul.navbar {
   display: flex;
-  background-color: cornsilk;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #feb06a;
   width: 100%;
   margin-bottom: 1rem;
+  padding: 0;
+}
+ul h2 {
+  color: white;
+  text-align: center;
+  font-size: 2em;
+}
+
+.bottom-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 ul.navbar li {
@@ -13,10 +28,13 @@ ul.navbar li {
 ul.navbar li a {
   text-decoration: none;
   color: black;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 ul.navbar li:has(a.active) {
   color: white;
   background-color: antiquewhite;
+}
+
+@media screen and (min-width: 501px) {
 }

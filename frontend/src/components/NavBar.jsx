@@ -1,5 +1,5 @@
-import { NavLink } from "react-router-dom";
 import { useCurrentUserContext } from "../contexts/CurrentUserContext";
+import Header from "./Header";
 
 import "./NavBar.css";
 
@@ -8,32 +8,19 @@ export default function NavBar() {
 
   return (
     <ul className="navbar">
-      <li>
-        <NavLink
-          className={({ isActive }) => (isActive ? "active" : undefined)}
-          to="/"
-        >
-          Home
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          className={({ isActive }) => (isActive ? "active" : undefined)}
-          to="/login"
-        >
-          Login
-        </NavLink>
-      </li>
-      {currentUser.id && (
-        <li>
-          <NavLink
-            className={({ isActive }) => (isActive ? "active" : undefined)}
-            to="/makes"
-          >
-            Makes
-          </NavLink>
-        </li>
-      )}
+      <h2>Wild CarZzz</h2>
+      <div className="bottom-nav">
+        <p>
+          <img
+            src="https://www.nicepng.com/png/detail/128-1280406_view-user-icon-png-user-circle-icon-png.png"
+            alt="Logo user"
+            width="30px"
+            height="30px"
+          />
+          {currentUser.name}
+        </p>
+        <Header />
+      </div>
     </ul>
   );
 }
