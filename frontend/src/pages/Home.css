@@ -4,9 +4,19 @@
   height: auto;
 }
 
+.container-title {
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+}
+
 .vehicle-card {
   margin: 1em;
   margin-top: 3em;
+  display: flex;
+}
+
+.vehicle-card-left {
   padding: 0.5em;
   background-color: #feb06a;
   border-radius: 15px;
@@ -21,4 +31,34 @@
   font-weight: bold;
   font-size: 20px;
   color: white;
+}
+
+.vehicle-card-right {
+  background-color: rgb(255, 242, 242);
+  border-top-right-radius: 15px 15px;
+  border-bottom-right-radius: 15px 15px;
+  height: 12em;
+  width: 13em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 0.5em;
+}
+
+.info-vehicle {
+  height: 9em;
+  text-indent: 8px;
+}
+
+.button-card-info {
+  border-radius: 8px;
+  font-weight: bold;
+  width: 100%;
+  height: 2em;
+  border: none;
+  background-color: grey;
+  color: white;
+}
+
+.button-card-info:hover {
+  background-color: rgb(68, 68, 68);
 }
