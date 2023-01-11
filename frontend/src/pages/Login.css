@@ -1,18 +1,25 @@
+div.headLogin {
+  margin-top: 5vh;
+  height: 10vh;
+  width: 100vw;
+  background-color: orange ;
+}
+
 form.login {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* width: 50%; */
+  width: 50vw;
   background-color: cyan;
   border-radius: 1rem;
   padding: 1rem;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-  font-size: xx-large;
+  font-size: x-large;
 }
 
 form.login label {
-  width: 100%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,7 +29,6 @@ form.login label {
 form.login label input,
 form.login button {
   margin-top: 0.5rem;
-  font-size: inherit;
   padding: 0.5rem 1rem;
   border-radius: inherit;
   text-align: center;
