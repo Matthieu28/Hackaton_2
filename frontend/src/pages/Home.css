@@ -1,6 +1,24 @@
 .container-home {
   display: flex;
-  background-color: rgb(15, 15, 15);
   width: auto;
   height: auto;
+}
+
+.vehicle-card {
+  margin: 1em;
+  margin-top: 3em;
+  padding: 0.5em;
+  background-color: #feb06a;
+  border-radius: 15px;
+  height: 14em;
+}
+
+.title-card {
+  margin-top: 1.5em;
+}
+
+.title-vehicle {
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
 }

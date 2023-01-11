@@ -24,13 +24,27 @@ export default function Home() {
   return (
     <div className="container-home">
       <section>
-        <h2>Make List</h2>
+        <h2>Vehicle List</h2>
         <div className="makes-grid">
           {vehicle.map((make) => (
-            <figure key={`make-${make.id}`}>
-              <img src={make.image} alt={make.name} />
-              <figcaption>{make.name.toUpperCase()}</figcaption>
-            </figure>
+            <div className="vehicle-card" key={`make-${make.id}`}>
+              <div
+                style={{
+                  backgroundImage: `url("${make.image}")`,
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  width: "10em",
+                  height: "7em",
+                  borderRadius: "15px",
+                }}
+              />
+              <div className="title-card">
+                <span className="title-vehicle">
+                  {make.model.toUpperCase()}
+                </span>
+              </div>
+            </div>
           ))}
         </div>
       </section>
