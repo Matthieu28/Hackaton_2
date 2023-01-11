@@ -7,6 +7,7 @@ import MakeList from "@pages/MakeList";
 import { useCurrentUserContext } from "./contexts/CurrentUserContext";
 
 import "./App.css";
+import Register from "@pages/Register";
 
 function App() {
   const { currentUser } = useCurrentUserContext();
@@ -19,6 +20,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           {currentUser.id && <Route path="/makes" element={<MakeList />} />}
           <Route path="*" element={<p>404 Not Found</p>} />
+          <Route path="/Register" element={<Register />} />
         </Routes>
       </main>
     </div>
