@@ -4,6 +4,7 @@ import NavBar from "@components/NavBar";
 import Home from "@pages/Home";
 import Login from "@pages/Login";
 import MakeList from "@pages/MakeList";
+import Map from "@pages/Map/Map";
 import { useCurrentUserContext } from "./contexts/CurrentUserContext";
 
 import "./App.css";
@@ -16,9 +17,10 @@ function App() {
       <NavBar />
       <main>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/Home" element={<Home />} />
           <Route path="/login" element={<Login />} />
           {currentUser.id && <Route path="/makes" element={<MakeList />} />}
+          <Route path="/map" element={<Map />} />
           <Route path="*" element={<p>404 Not Found</p>} />
           <Route path="/Register" element={<Register />} />
         </Routes>
