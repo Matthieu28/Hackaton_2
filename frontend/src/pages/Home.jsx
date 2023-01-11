@@ -1,8 +1,19 @@
+// import { useState, useEffect } from "react";
+// import axios from "axios";
+import "./Home.css";
+
 export default function Home() {
+  // const [vehicle, setVehicle] = useState([]);
+
+  // const getVehicle = async () => {
+  //   try {
+  //     const { data } = await axios.get()
+  //   }
+  // }
+
   return (
-    <section>
-      <h1>My Garage App</h1>
-      <p>Home</p>
-    </section>
+    <div className="container-home">
+      <section>aaa</section>
+    </div>
   );
 }
