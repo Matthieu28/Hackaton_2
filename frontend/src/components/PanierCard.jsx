@@ -1,4 +1,4 @@
-import VoitureTest from "../assets/voiture-test.png";
+import VoitureTest from "../assets/";
 
 const PanierCard = () => {
   return (
