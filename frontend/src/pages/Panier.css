@@ -1,31 +1,58 @@
 .panier {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .titrePanier {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 36px;
-    color: white;
-    border-bottom: solid 1px white;
-    border-width: 20%;
-  }
-  
-  .imageTest {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 6.5em;
-    width: 50%;
-    height: 10em;
-  }
-  
-  .nomVoiture {
-    color: white;
-    display: flex;
-    text-align: center;
-  }
-  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.titrePanier {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  color: white;
+  border-bottom: solid 1px white;
+  border-width: 20%;
+}
+
+.imageDeVoiture img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  height: 10em;
+  margin: 0 auto;
+}
+
+.nomVoiture {
+  color: white;
+}
+
+.buttonOne {
+  background-color: orange;
+  width: 11em;
+  height: 3.5em;
+  margin: 0.5em;
+}
+
+.buttonTwo {
+  width: 11em;
+  height: 3.5em;
+  margin: 0.5em;
+}
+
+.allButton {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid white;
+}
+
+.barreDenBas {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 25%;
+  width: 25%;
+  padding-top: 100%;
+}
