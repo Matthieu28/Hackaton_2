@@ -1,4 +1,5 @@
 import PanierCard from "../components/PanierCard";
+
 import "./Panier.css";
 
 const Panier = () => {
