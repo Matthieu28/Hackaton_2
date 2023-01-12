@@ -1,9 +1,12 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
+import { useCurrentUserContext } from "../contexts/CurrentUserContext";
 import "./Home.css";
 
 export default function Home() {
   const [vehicle, setVehicle] = useState([]);
+  const { currentUser } = useCurrentUserContext();
 
   const getVehicle = async () => {
     try {
@@ -24,7 +27,16 @@ export default function Home() {
   return (
     <div className="container-home">
       <section>
-        <span className="container-title">Vehicle List :</span>
+        <div className="top-home">
+          <span className="container-title">Vehicle List :</span>
+          {currentUser.seller && (
+            <Link to="/Form">
+              <button className="seller" type="button">
+                Add Offer
+              </button>
+            </Link>
+          )}
+        </div>
         <div className="makes-grid">
           {vehicle.map((make) => (
             <div className="vehicle-card" key={`make-${make.id}`}>

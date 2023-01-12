@@ -140,7 +140,7 @@ export default function Register() {
 
       <p className="account">Already have account ?</p>
       <div>
-        <Link to="/Login" className="log">
+        <Link to="/" className="log">
           Login !
         </Link>
       </div>

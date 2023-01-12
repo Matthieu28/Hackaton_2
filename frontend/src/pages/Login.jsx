@@ -6,11 +6,11 @@ import { useCurrentUserContext } from "../contexts/CurrentUserContext";
 import "./Login.css";
 
 export default function Login() {
-  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleChangeName = (e) => {
-    setName(e.target.value);
+  const handleChangeEmail = (e) => {
+    setEmail(e.target.value);
   };
 
   const handleChangePassword = (e) => {
@@ -22,21 +22,21 @@ export default function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!name || !password) {
+    if (!email || !password) {
       alert("You must provide an email and a password");
     } else {
       axios
         .post(
           `${import.meta.env.VITE_BACKEND_URL}/api/users/login`,
           {
-            name,
+            email,
             password,
           },
           { withCredentials: true }
         )
         .then(({ data }) => {
           setCurrentUser(data);
-          navigate("/makes");
+          navigate("/home");
         })
         .catch((err) => {
           console.error(err);
@@ -53,11 +53,11 @@ export default function Login() {
           Name:{" "}
           <input
             type="name"
-            id="name"
+            id="email"
             required
             placeholder="User"
-            value={name}
-            onChange={handleChangeName}
+            value={email}
+            onChange={handleChangeEmail}
           />
         </label>
         <label htmlFor="password" className="password">
