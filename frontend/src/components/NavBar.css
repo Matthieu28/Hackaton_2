@@ -40,6 +40,8 @@ ul p {
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 0.5em;
+  margin-left: 1em;
 }
 
 @media screen and (min-width: 500px) {
