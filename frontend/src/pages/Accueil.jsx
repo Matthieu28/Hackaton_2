@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "@assets/logo-wildCarZzz.png";
+import logo from "../assets/logo-wildCarZzz.png";
 import "./Accueil.css";
 
 const Accueil = () => {
@@ -54,7 +54,7 @@ const Accueil = () => {
         <img src={logo} alt="logo" id="logoCar" />
       </section>
       <section className="carousel-overall">
-        <h1 className="title">Accueille</h1>
+        <h1 className="title">Home</h1>
         <div className="globalContainer">
           <div className="container">
             <div>
@@ -102,14 +102,14 @@ const Accueil = () => {
               />
             </div>
             <div className="presentation-txt">
-              <h2>Présentation</h2>
+              <h2>Presentation</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Doloribus, voluptas deserunt dolores qui eum nam veritatis earum
                 quia voluptate quaerat architecto quos nisi laborum commodi
                 explicabo dolor rem repellat saepe!
               </p>
-              <Link to="/Register" id="button-login">
+              <Link to="/" id="button-login">
                 Login Or Register
               </Link>
             </div>
