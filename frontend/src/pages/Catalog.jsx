@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { useCurrentUserContext } from "../contexts/CurrentUserContext";
-import "./Home.css";
+import "./Catalog.css";
 
-export default function Home() {
+export default function Catalog() {
   const [vehicle, setVehicle] = useState([]);
   const { currentUser } = useCurrentUserContext();
   const [marques, setMarques] = useState([]);

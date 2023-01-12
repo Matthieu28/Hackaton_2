@@ -3,6 +3,8 @@
   align-items: center;
   text-align: center;
   flex-direction: column;
+  margin-bottom: 10em;
+  margin-top: 6em;
 }
 
 h1 {
@@ -10,6 +12,7 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
   font-size: 3em;
+  margin-top: 15px;
 }
 
 .sign-continue {
@@ -41,6 +44,7 @@ h1 {
   width: 17em;
   background-color: #717574;
   color: white;
+  padding-left: 15px;
 }
 
 .login #email::placeholder {
@@ -67,6 +71,7 @@ h1 {
   width: 17em;
   background-color: #717574;
   color: white;
+  padding: 15px;
 }
 
 .login #password::placeholder {
@@ -94,13 +99,7 @@ h1 {
   background-color: #feb06a;
   margin-top: 3em;
   font-weight: bold;
-}
-
-.forget {
-  margin-top: 2em;
-  margin-bottom: 10px;
-  color: rgb(255, 255, 255);
-  font-size: 15px;
+  margin-bottom: 25px;
 }
 
 .sign {
@@ -132,9 +131,5 @@ h1 {
 
   .log-in {
     width: 60em;
-  }
-
-  .forget {
-    font-size: 25px;
   }
 }
