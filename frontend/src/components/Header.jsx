@@ -15,11 +15,11 @@ function Header() {
           <ul className="navbar__links slideInDown  ">
             <li className="navbar__item">
               <Link
-                to="/Home"
+                to="/Catalog"
                 className="navbar__link"
                 onClick={handleShowLinks}
               >
-                Home
+                Catalog
               </Link>
             </li>
             <li className="navbar__item">
@@ -55,7 +55,7 @@ function Header() {
           <div className="container-href">
             <ul id="li">
               <li>
-                <Link to="/Home">Home</Link>
+                <Link to="/Catalog">Catalog</Link>
               </li>
               <li>
                 <Link to="/Map">Map</Link>
