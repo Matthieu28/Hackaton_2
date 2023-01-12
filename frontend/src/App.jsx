@@ -1,14 +1,14 @@
 import { Routes, Route } from "react-router-dom";
 
-import NavBar from "@components/NavBar";
-import Home from "@pages/Home";
-import Login from "@pages/Login";
-import MakeList from "@pages/MakeList";
-import Map from "@pages/Map/Map";
+import NavBar from "./components/NavBar";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import MakeList from "./pages/MakeList";
+import Map from "./pages/Map/Map";
+import Register from "./pages/Register";
 import { useCurrentUserContext } from "./contexts/CurrentUserContext";
 
 import "./App.css";
-import Register from "@pages/Register";
 
 function App() {
   const { currentUser } = useCurrentUserContext();
