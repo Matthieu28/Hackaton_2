@@ -1,12 +1,9 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
-import { useCurrentUserContext } from "../contexts/CurrentUserContext";
 import "./Home.css";
 
 export default function Home() {
   const [vehicle, setVehicle] = useState([]);
-  const { currentUser } = useCurrentUserContext();
 
   const getVehicle = async () => {
     try {
@@ -76,9 +73,9 @@ export default function Home() {
                     }}
                   />
                 </div>
-                <div class="line" />
+                <div className="line" />
                 <div className="second-box-inside">lol</div>
-                <div class="line" />
+                <div className="line" />
                 <div className="third-box-inside">lol</div>
               </div>
               <div className="second-box-vehicle">hello</div>
