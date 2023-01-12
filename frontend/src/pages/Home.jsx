@@ -1,9 +1,12 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
+import { useCurrentUserContext } from "../contexts/CurrentUserContext";
 import "./Home.css";
 
 export default function Home() {
   const [vehicle, setVehicle] = useState([]);
+  const { currentUser } = useCurrentUserContext();
 
   const getVehicle = async () => {
     try {
@@ -23,21 +26,28 @@ export default function Home() {
 
   return (
     <div className="container-home">
-      <section>
-        <span className="container-title">Vehicle List :</span>
-        <div className="makes-grid">
-          {vehicle.map((make) => (
-            <div className="vehicle-card" key={`make-${make.id}`}>
+      <span className="container-title">Vehicle List :</span>
+      {currentUser.seller && (
+        <Link to="/Form">
+          <button className="seller" type="button">
+            Add Offer
+          </button>
+        </Link>
+      )}
+      <div className="makes-grid">
+        {vehicle.map((make) => (
+          <div className="vehicle-card" key={`make-${make.id}`}>
+            <div className="mobile-home">
               <div className="vehicle-card-left">
                 <div
                   style={{
                     backgroundImage: `url("${make.image}")`,
                     backgroundRepeat: "no-repeat",
-                    backgroundSize: "cover",
+                    backgroundSize: "contain",
                     backgroundPosition: "center",
-                    width: "10em",
-                    height: "7em",
-                    borderRadius: "15px",
+                    marginTop: "0.8em",
+                    width: "100%",
+                    height: "50%",
                   }}
                 />
                 <div className="title-card">
@@ -53,9 +63,36 @@ export default function Home() {
                 </button>
               </div>
             </div>
-          ))}
-        </div>
-      </section>
+            <div className="pc-home">
+              <div className="first-box-vehicle">
+                <div className="first-box-inside">
+                  <div className="title-card2">
+                    <span className="title-vehicle2">
+                      {make.model.toUpperCase()}
+                    </span>
+                  </div>
+                  <div
+                    style={{
+                      backgroundImage: `url("${make.image}")`,
+                      backgroundRepeat: "no-repeat",
+                      backgroundSize: "contain",
+                      backgroundPosition: "center",
+                      marginTop: "0.8em",
+                      width: "100%",
+                      height: "50%",
+                    }}
+                  />
+                </div>
+                <div className="line" />
+                <div className="second-box-inside">lol</div>
+                <div className="line" />
+                <div className="third-box-inside">lol</div>
+              </div>
+              <div className="second-box-vehicle">hello</div>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
