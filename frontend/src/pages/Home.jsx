@@ -43,10 +43,6 @@ export default function Home() {
     getMarque();
   }, []);
 
-  const handleSearch = (e) => {
-    setFilter(e.target.value);
-  };
-
   useEffect(() => {
     getVehicle();
   }, []);
@@ -67,6 +63,10 @@ export default function Home() {
     getVtype();
   }, []);
 
+  const handleSearch = (e) => {
+    setFilter(e.target.value);
+  };
+
   return (
     <div className="container-home">
       <span className="container-title">Vehicle List :</span>
@@ -78,11 +78,11 @@ export default function Home() {
         </Link>
       )}
 
-      <select id="cupcake-select" value={filter} onChange={handleSearch}>
+      <select id="vtype-select" value={filter} onChange={handleSearch}>
         <option value="">---</option>
-        {marques.map((marque) => (
-          <option value={marque.id} key={marque.id}>
-            {marque.name}
+        {vtypes.map((vtype) => (
+          <option value={vtype.id} key={vtype.id}>
+            {vtype.name}
           </option>
         ))}
       </select>
@@ -90,7 +90,7 @@ export default function Home() {
       <div className="makes-grid">
         {vehicle
           .filter(
-            (search) => filter === "" || search.makeId === parseInt(filter, 10)
+            (search) => filter === "" || search.vtypeId === parseInt(filter, 10)
           )
           .map((make) => (
             <div className="vehicle-card" key={`make-${make.id}`}>
@@ -144,25 +144,28 @@ export default function Home() {
                   <div className="second-box-inside">
                     <div className="fiche-box-height">{make.fiche}</div>
                     <div className="more-box-height">
-                      <span>Kilométrage : </span>
+                      <span>Mileage : </span>
                       {make.kilometrage}
                       <br />
-                      <span>Nombre de place : </span>
+                      <span>Number of places : </span>
                       {make.place}
                       <br />
-                      <span>Disponibilité : </span>
-                      {make.datedispo.slice(0, 10)}
+                      <span>Availablity : </span>
                     </div>
                   </div>
                   <div className="line" />
                   <div className="third-box-inside">
-                    {make.lieu}
-                    {make.vtypeId}
-                    {vtypes.map((vtype) => (
-                      <div className="test" key={`make-${vtype.id}`}>
-                        {vtype.name}
-                      </div>
-                    ))}
+                    <div className="date-lieu-box">
+                      <p>
+                        This car will be available from{" "}
+                        <span>{make.datedispo.slice(0, 10)}</span> to{" "}
+                        <span>{make.datedispo.slice(0, 10)}</span> in{" "}
+                        <span>{make.lieu}</span>.
+                      </p>
+                    </div>
+                    <div className="price-per-day">
+                      <span>Price : 140$ / day</span>
+                    </div>
                   </div>
                 </div>
                 <div className="second-box-vehicle">
