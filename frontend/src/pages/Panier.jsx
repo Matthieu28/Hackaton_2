@@ -1,3 +1,4 @@
+import BasDePanier from "@components/BasDePanier";
 import PanierCard from "../components/PanierCard";
 
 import "./Panier.css";
@@ -8,7 +9,13 @@ const Panier = () => {
       <div className="titrePanier">
         <p>Mon Panier</p>
       </div>
-      <PanierCard />
+      <div className="carteDeSesMorts">
+        <PanierCard />
+        <PanierCard />
+        <div className="barreDenBas">
+          <BasDePanier />
+        </div>
+      </div>
     </div>
   );
 };
