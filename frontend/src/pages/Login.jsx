@@ -46,7 +46,7 @@ export default function Login() {
 
   return (
     <form className="login" onSubmit={handleSubmit}>
-      <h1>Login</h1>
+      <h1 className="title-log">Login</h1>
       <p className="sign-continue">Sign to continue.</p>
       <div className="inputs">
         <label htmlFor="name" className="name">
@@ -55,7 +55,7 @@ export default function Login() {
             type="name"
             id="email"
             required
-            placeholder="User"
+            placeholder="Your user"
             value={email}
             onChange={handleChangeEmail}
           />
