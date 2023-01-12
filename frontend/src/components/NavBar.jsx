@@ -15,10 +15,10 @@ export default function NavBar() {
         <Header />
       </div>
       <ul className="navbar-user">
-          <img src={profil} alt="Logo user" width="30px" height="30px" />
+        <img src={profil} alt="Logo user" width="30px" height="30px" />
         <p>
-          Welcome,<p></p>
-
+          Welcome,
+          <p />
           {currentUser.name}
         </p>
       </ul>
