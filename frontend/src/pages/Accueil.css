@@ -25,12 +25,12 @@
   text-decoration: none;
   color: black;
   border-radius: 16px;
-  background-color: #e8b87e;
+  background-color: #feb06a;
 }
 
 #logoCar {
   width: 100%;
-  background-color: #e8b97e;
+  background-color: #feb06a;
 }
 
 .carousel-overall {
@@ -119,7 +119,7 @@
   .logo-sizing {
     display: flex;
     justify-content: center;
-    background-color: #e8b87e;
+    background-color: #feb06a;
   }
 
   .globalContainer {
