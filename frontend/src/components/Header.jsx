@@ -55,7 +55,7 @@ function Header() {
           <div className="container-href">
             <ul id="li">
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/Home">Home</Link>
               </li>
               <li>
                 <Link to="/Map">Map</Link>
