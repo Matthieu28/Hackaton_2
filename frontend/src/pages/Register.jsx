@@ -45,7 +45,8 @@ export default function Register() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!email || !password || !name) {
-      alert("You must provide an email and a password");
+      // eslint-disable-next-line no-alert
+      alert("You must provide all the information");
     } else {
       axios
         .post(
@@ -69,7 +70,6 @@ export default function Register() {
     }
   };
 
-  console.log(name, email, password, customer, seller);
   return (
     <form className="login" onSubmit={handleSubmit}>
       <label htmlFor="name">
