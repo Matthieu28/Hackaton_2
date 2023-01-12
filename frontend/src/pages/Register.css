@@ -48,6 +48,7 @@ h1 {
   width: 17em;
   background-color: #717574;
   color: white;
+  padding: 15px;
 }
 
 .register #name::placeholder {
@@ -74,6 +75,7 @@ h1 {
   width: 17em;
   background-color: #717574;
   color: white;
+  padding-left: 15px;
 }
 
 .register #email::placeholder {
@@ -100,6 +102,7 @@ h1 {
   width: 17em;
   background-color: #717574;
   color: white;
+  padding-left: 15px;
 }
 
 .register #password::placeholder {
