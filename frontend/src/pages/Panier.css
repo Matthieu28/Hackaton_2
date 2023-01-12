@@ -34,6 +34,14 @@
   margin: 0.5em;
 }
 
+.buttonOne:hover{
+  z-index: 150px;
+}
+
+.buttonTwo:hover{
+  z-index: 150px;
+}
+
 .buttonTwo {
   width: 11em;
   height: 3.5em;
@@ -70,8 +78,8 @@
   }
   .barreDenBas{
     display: flex;
-    width: 40%;
-    height: 10em;
     border: 1px solid red;
+    justify-content: center;
+    align-items: center;
   }
 }

@@ -12,7 +12,7 @@ const Panier = () => {
       <div className="carteDeSesMorts">
         <PanierCard />
         <PanierCard />
-        <div>
+        <div className="barreDenBas">
           <BasDePanier />
         </div>
       </div>
