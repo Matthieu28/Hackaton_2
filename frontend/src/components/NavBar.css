@@ -36,5 +36,49 @@ ul.navbar li:has(a.active) {
   background-color: antiquewhite;
 }
 
-@media screen and (min-width: 501px) {
+ul p {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.2em;
+}
+
+#logo-car {
+  width: 50%;
+}
+
+.navbar-user {
+  display: flex;
+  gap: 1em;
+}
+
+@media screen and (min-width: 500px) {
+  .bottom-nav {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 35em;
+  }
+
+  ul h2 {
+    font-size: 4em;
+  }
+
+  ul.navbar {
+    flex-direction: row;
+    display: flex;
+    align-content: flex-end;
+    align-items: flex-end;
+  }
+  ul p {
+    color: black;
+    display: flex;
+    margin-left: 2em;
+  }
+  #logo-car {
+    width: 70%;
+  }
 }

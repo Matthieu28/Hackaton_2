@@ -6,7 +6,7 @@
   position: relative;
   width: 100%;
   min-height: 75px;
-  color: #feb06a;
+  background-color: #feb06a;
 }
 
 .navbar__links {
@@ -157,7 +157,7 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
   #telnav {
     display: none;
   }
@@ -166,20 +166,17 @@ input:checked + .slider:before {
   }
   .navbar {
     display: flex;
-    background-color: #e8b97e;
-    height: 10rem;
+    background-color: #feb06a;
     position: relative;
     background-image: url(../assets/waves.png);
+    flex-direction: row-reverse;
+    align-items: flex-end;
   }
   .show-darkMode .navbar {
     background-image: url(../assets/darkwaves.png);
   }
   .navbar img {
-    width: 35%;
-    position: absolute;
-    top: 63%;
-    left: 50%;
-    transform: translate(-50%, -70%);
+    width: 100%;
   }
   .show-darkMode .container-href {
     background-color: #2b2e2b;
@@ -187,23 +184,21 @@ input:checked + .slider:before {
   }
   .container-href {
     display: flex;
+    width: 100%;
     justify-content: space-around;
     border: none;
     gap: 25rem;
-    font-size: 2rem;
-    background-color: rgba(255, 255, 255);
+    font-size: 1rem;
   }
   #li {
     display: flex;
-    gap: 10rem;
+    gap: 6rem;
     list-style: none;
   }
   #li :hover {
     color: #c1694f;
   }
-  .show-darkMode #li :hover {
-    color: #990505;
-  }
+
   #li2 {
     display: flex;
     gap: 10rem;
@@ -212,10 +207,9 @@ input:checked + .slider:before {
   #li2 :hover {
     color: #c1694f;
   }
-  .show-darkMode #li2 :hover {
-    color: #990505;
-  }
+
   #li a {
+    font-size: 2em;
     text-decoration: none;
     color: black;
   }
@@ -223,12 +217,7 @@ input:checked + .slider:before {
     text-decoration: none;
     color: black;
   }
-  .show-darkMode #li a {
-    color: #f2f2f2;
-  }
-  .show-darkMode #li2 a {
-    color: #f2f2f2;
-  }
+
   .switch {
     margin-left: 8.5rem;
     height: 40px;

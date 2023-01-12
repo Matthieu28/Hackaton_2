@@ -55,15 +55,13 @@ function Header() {
           <div className="container-href">
             <ul id="li">
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/Home">Home</Link>
               </li>
               <li>
-                <Link to="/Animes">Map</Link>
+                <Link to="/Map">Map</Link>
               </li>
-            </ul>
-            <ul id="li2">
               <li>
-                <Link to="/Chefs">Panier</Link>
+                <Link to="/Panier">Panier</Link>
               </li>
             </ul>
           </div>
