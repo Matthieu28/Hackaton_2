@@ -129,8 +129,4 @@ export default function Register() {
       </button>
     </form>
   );
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> dev
