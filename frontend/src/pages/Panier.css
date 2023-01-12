@@ -14,7 +14,7 @@
   border-width: 20%;
 }
 
-.imageDeVoiture img{
+.imageDeVoiture img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,11 +34,11 @@
   margin: 0.5em;
 }
 
-.buttonOne:hover{
+.buttonOne:hover {
   z-index: 150px;
 }
 
-.buttonTwo:hover{
+.buttonTwo:hover {
   z-index: 150px;
 }
 
@@ -65,18 +65,18 @@
   padding-top: 100%;
 }
 
-.carteDeSesMorts{
+.carteDeSesMorts {
   display: flex;
   flex-direction: column;
 }
 
-@media screen and (min-width:502px) {
-  .carteDeSesMorts{
+@media screen and (min-width: 502px) {
+  .carteDeSesMorts {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
-  .barreDenBas{
+  .barreDenBas {
     display: flex;
     border: 1px solid red;
     justify-content: center;
