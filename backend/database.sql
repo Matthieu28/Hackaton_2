@@ -77,6 +77,7 @@ CREATE TABLE `user` (
   `password` varchar(255) NOT NULL,
   `customer` tinyint(1) NOT NULL,
   `seller` tinyint(1) NOT NULL,
+  `admin` INT DEFAULT 0,
   PRIMARY KEY (`id`),
   UNIQUE KEY `email` (`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -123,7 +124,7 @@ CREATE TABLE `vehicle` (
 
 LOCK TABLES `vehicle` WRITE;
 /*!40000 ALTER TABLE `vehicle` DISABLE KEYS */;
-INSERT INTO `vehicle` VALUES (1, 49000, "blablabla car", "La Loupe", "2023-01-20", 4, "Voiture de ouf", 1, 2, "https://www.auto-moto.com/wp-content/uploads/sites/9/2022/02/01-peugeot-208-750x410.jpg"),(2, 49000, "blablabla car 2", "La Loupe", "2023-01-20", 4, "Voiture de ouf", 1, 3, "https://www.auto-moto.com/wp-content/uploads/sites/9/2022/02/01-peugeot-208-750x410.jpg"),(3, 49000, "blablabla car", "La Loupe", "2023-01-20", 4, "Voiture de ouf", 1, 1, "https://www.auto-moto.com/wp-content/uploads/sites/9/2022/02/01-peugeot-208-750x410.jpg");
+INSERT INTO `vehicle` VALUES (1, 49000, "blablabla car", "La Loupe", "2023-01-20", 4, "Voiture de ouf", 1, 2, "https://www.auto-moto.com/wp-content/uploads/sites/9/2022/02/01-peugeot-208-750x410.jpg"),(2, 49000, "blablabla car 2", "La Loupe", "2023-01-20", 4, "Voiture de ouf", 1, 3, "https://www.auto-moto.com/wp-content/uploads/sites/9/2022/02/01-peugeot-208-750x410.jpg"),(3, 49000, "blablabla car", "La Loupe", "2023-01-20", 4, "Voiture de ouf", 1, 1, "https://www.auto-moto.com/wp-content/uploads/sites/9/2022/02/01-peugeot-208-750x410.jpg"), (4, 49000, "blablabla car", "La Loupe", "2023-01-20", 4, "Voiture de ouf", 1, 1, "https://www.auto-moto.com/wp-content/uploads/sites/9/2022/02/01-peugeot-208-750x410.jpg"), (5, 49000, "blablabla car", "La Loupe", "2023-01-20", 4, "Voiture de ouf", 1, 1, "https://www.auto-moto.com/wp-content/uploads/sites/9/2022/02/01-peugeot-208-750x410.jpg"), (6, 49000, "blablabla car", "La Loupe", "2023-01-20", 4, "Voiture de ouf", 1, 1, "https://www.auto-moto.com/wp-content/uploads/sites/9/2022/02/01-peugeot-208-750x410.jpg"), (7, 49000, "blablabla car", "La Loupe", "2023-01-20", 4, "Voiture de ouf", 1, 1, "https://www.auto-moto.com/wp-content/uploads/sites/9/2022/02/01-peugeot-208-750x410.jpg"), (8, 49000, "blablabla car", "La Loupe", "2023-01-20", 4, "Voiture de ouf", 1, 1, "https://www.auto-moto.com/wp-content/uploads/sites/9/2022/02/01-peugeot-208-750x410.jpg");
 /*!40000 ALTER TABLE `vehicle` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
