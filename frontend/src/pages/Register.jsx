@@ -45,7 +45,8 @@ export default function Register() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!email || !password || !name) {
-      alert("You must provide an email and a password");
+      // eslint-disable-next-line no-alert
+      alert("You must provide all the information");
     } else {
       axios
         .post(
