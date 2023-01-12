@@ -44,7 +44,7 @@ export default function Register() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!email || !password || !name) {
+    if (!email || !password || !name || !status) {
       // eslint-disable-next-line no-alert
       alert("You must provide all the information");
     } else {
@@ -62,7 +62,7 @@ export default function Register() {
         )
         .then(({ data }) => {
           setCurrentUser(data);
-          navigate("/home");
+          navigate("/");
         })
         .catch((err) => {
           console.error(err);
