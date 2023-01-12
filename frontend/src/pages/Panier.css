@@ -56,3 +56,22 @@
   width: 25%;
   padding-top: 100%;
 }
+
+.carteDeSesMorts{
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width:502px) {
+  .carteDeSesMorts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .barreDenBas{
+    display: flex;
+    width: 40%;
+    height: 10em;
+    border: 1px solid red;
+  }
+}

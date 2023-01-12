@@ -1,6 +1,4 @@
 import VoitureTest from "../assets/voiture-test.png";
-import Heart from "../assets/heart-regular.svg";
-import Cloche from "../assets/bell-regular.svg";
 
 const PanierCard = () => {
   return (
@@ -17,10 +15,6 @@ const PanierCard = () => {
           Supprimer
         </button>
       </div>
-      <footer className="barreDenBas">
-        <img src={Heart} alt="heart" />
-        <img src={Cloche} alt="bell" />
-      </footer>
     </div>
   );
 };
