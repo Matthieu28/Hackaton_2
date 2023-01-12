@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 
+import Register from "@pages/Register";
 import NavBar from "@components/NavBar";
 import Home from "@pages/Home";
 import Login from "@pages/Login";
@@ -8,7 +9,6 @@ import Map from "@pages/Map/Map";
 import { useCurrentUserContext } from "./contexts/CurrentUserContext";
 
 import "./App.css";
-import Register from "@pages/Register";
 
 function App() {
   const { currentUser } = useCurrentUserContext();
