@@ -3,7 +3,16 @@
   height: auto;
 }
 
+.nav-home {
+  width: 100%;
+  display: flex;
+  padding-left: 2em;
+  padding-right: 4em;
+  justify-content: space-between;
+}
+
 .container-title {
+  margin-left: 1em;
   font-weight: bold;
   font-size: 25px;
   color: white;

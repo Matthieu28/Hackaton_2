@@ -67,25 +67,29 @@ export default function Catalog() {
     setFilter(e.target.value);
   };
 
+  console.error(marques);
+
   return (
     <div className="container-home">
-      <span className="container-title">Vehicle List :</span>
-      {currentUser.seller && (
-        <Link to="/Form">
-          <button className="seller" type="button">
-            Add Offer
-          </button>
-        </Link>
-      )}
+      <div className="nav-home">
+        <span className="container-title">Vehicle List :</span>
+        {currentUser.seller && (
+          <Link to="/Form">
+            <button className="seller" type="button">
+              Add Offer
+            </button>
+          </Link>
+        )}
 
-      <select id="vtype-select" value={filter} onChange={handleSearch}>
-        <option value="">---</option>
-        {vtypes.map((vtype) => (
-          <option value={vtype.id} key={vtype.id}>
-            {vtype.name}
-          </option>
-        ))}
-      </select>
+        <select id="vtype-select" value={filter} onChange={handleSearch}>
+          <option value="">---</option>
+          {vtypes.map((vtype) => (
+            <option value={vtype.id} key={vtype.id}>
+              {vtype.name}
+            </option>
+          ))}
+        </select>
+      </div>
 
       <div className="makes-grid">
         {vehicle
