@@ -3,7 +3,7 @@ import Accueil from "./pages/Accueil";
 import Footer from "./components/Footer";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import Home from "./pages/Home";
+import Catalog from "./pages/Catalog";
 import Map from "./pages/Map/Map";
 import Panier from "./pages/Panier";
 import Form from "./pages/Form";
@@ -20,7 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/catalog" element={<Catalog />} />
           <Route path="/panier" element={<Panier />} />
           <Route path="/map" element={<Map />} />
           <Route path="/form" element={<Form />} />
