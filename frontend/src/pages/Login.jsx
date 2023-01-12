@@ -75,7 +75,6 @@ export default function Login() {
           Log in
         </button>
       </div>
-      <p className="forget">Forgot Password ?</p>
       <div>
         <Link to="/Register" className="sign">
           Sign up !

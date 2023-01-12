@@ -97,13 +97,7 @@ h1 {
   background-color: #feb06a;
   margin-top: 3em;
   font-weight: bold;
-}
-
-.forget {
-  margin-top: 2em;
-  margin-bottom: 10px;
-  color: rgb(255, 255, 255);
-  font-size: 15px;
+  margin-bottom: 25px;
 }
 
 .sign {
@@ -135,9 +129,5 @@ h1 {
 
   .log-in {
     width: 60em;
-  }
-
-  .forget {
-    font-size: 25px;
   }
 }

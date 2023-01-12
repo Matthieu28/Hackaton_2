@@ -174,6 +174,10 @@ h1 {
     flex-direction: column;
     align-items: center;
   }
+
+  .sign-register {
+    font-size: 25px;
+  }
   .register .name {
     margin-top: 25px;
   }
@@ -205,5 +209,9 @@ h1 {
 
   .sign-up {
     width: 60em;
+  }
+
+  .account {
+    font-size: 25px;
   }
 }
