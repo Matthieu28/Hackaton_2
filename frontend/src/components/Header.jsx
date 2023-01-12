@@ -58,12 +58,10 @@ function Header() {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/Animes">Map</Link>
+                <Link to="/Map">Map</Link>
               </li>
-            </ul>
-            <ul id="li2">
               <li>
-                <Link to="/Chefs">Panier</Link>
+                <Link to="/Panier">Panier</Link>
               </li>
             </ul>
           </div>

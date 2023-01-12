@@ -19,7 +19,6 @@ function App() {
         <Routes>
           <Route path="/Home" element={<Home />} />
           <Route path="/login" element={<Login />} />
-          {currentUser.id && <Route path="/makes" element={<MakeList />} />}
           <Route path="/map" element={<Map />} />
           <Route path="*" element={<p>404 Not Found</p>} />
           <Route path="/Register" element={<Register />} />
