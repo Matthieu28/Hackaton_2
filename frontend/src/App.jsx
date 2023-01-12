@@ -6,9 +6,6 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Map from "./pages/Map/Map";
 import Register from "./pages/Register";
-import Home from "./pages/Home";
-import Map from "./pages/Map/Map";
-import NavBar from "./components/NavBar";
 
 import "./App.css";
 
@@ -19,11 +16,10 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Login />} />
-          <Route path="/Register" element={<Register />} />
-          <Route path="/Home" element={<Home />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/map" element={<Map />} />
-          <Route path="/Register" element={<Register />} />
-          <Route path="/Form" element={<Form />} />
+          <Route path="/form" element={<Form />} />
           <Route path="*" element={<p>404 Not Found</p>} />
         </Routes>
       </main>
