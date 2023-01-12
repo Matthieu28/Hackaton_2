@@ -23,3 +23,9 @@
   margin-top: 5rem;
   height: 17rem;
 }
+
+#map {
+  width: 100%;
+  height: 400px;
+  background: #d6d6d6;
+}

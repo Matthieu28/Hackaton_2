@@ -1,4 +1,5 @@
 import "./Map.css";
+import MyMap from "../../components/MyMap";
 
 export default function Map() {
   return (
@@ -9,6 +10,9 @@ export default function Map() {
           Découvrez les magasins proches de chez vous. Cliquez ci-dessous pour
           voir leurs horaires d'ouverture.
         </p>
+        <div id="map">
+          <MyMap isMarkerShown />
+        </div>
         <img
           className="picture-map"
           src="./src/assets/map.png"
