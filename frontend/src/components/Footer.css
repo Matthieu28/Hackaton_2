@@ -5,6 +5,7 @@
   align-items: end;
   margin-top: 2em;
   padding: 1em;
+
 }
 
 .footer-overall img {
@@ -14,4 +15,12 @@
 
 .footer-overall p {
   color: black;
+}
+
+@media screen and (min-width: 500px) {
+  .footer-overall {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }

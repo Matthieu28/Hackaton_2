@@ -3,6 +3,8 @@
   align-items: center;
   text-align: center;
   flex-direction: column;
+  margin-bottom: 10em;
+  margin-top: 6em;
 }
 
 h1 {

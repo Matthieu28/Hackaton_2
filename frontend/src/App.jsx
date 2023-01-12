@@ -1,5 +1,6 @@
-import { Routes, Route } from "react-router-dom";
-
+import { Routes, Route, useLocation } from "react-router-dom";
+import Accueil from "./pages/Accueil";
+import Footer from "./components/Footer";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Home from "./pages/Home";
@@ -11,9 +12,10 @@ import NavBar from "./components/NavBar";
 import "./App.css";
 
 function App() {
+  const { pathname } = useLocation();
   return (
     <div className="App">
-      <NavBar />
+      {pathname !== "/accueil" && <NavBar />}
       <main>
         <Routes>
           <Route path="/" element={<Login />} />
@@ -22,6 +24,7 @@ function App() {
           <Route path="/panier" element={<Panier />} />
           <Route path="/map" element={<Map />} />
           <Route path="/form" element={<Form />} />
+          <Route path="/accueil" element={<Accueil />} />
           <Route path="*" element={<p>404 Not Found</p>} />
         </Routes>
       </main>
