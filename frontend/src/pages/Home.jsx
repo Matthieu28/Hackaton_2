@@ -1,9 +1,12 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
+import { useCurrentUserContext } from "../contexts/CurrentUserContext";
 import "./Home.css";
 
 export default function Home() {
   const [vehicle, setVehicle] = useState([]);
+  const { currentUser } = useCurrentUserContext();
 
   const getVehicle = async () => {
     try {

@@ -1,0 +1,10 @@
+.input-form {
+  width: 15em;
+}
+
+.form-vehicles {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  color: white;
+}
