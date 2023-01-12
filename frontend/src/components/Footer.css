@@ -1,0 +1,17 @@
+.footer-overall {
+  display: flex;
+  background-color: #feb06a;
+  flex-direction: row-reverse;
+  align-items: end;
+  margin-top: 2em;
+  padding: 1em;
+}
+
+.footer-overall img {
+  width: 5%;
+  height: 20%;
+}
+
+.footer-overall p {
+  color: black;
+}

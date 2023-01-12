@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-
+import Footer from "@components/Footer";
 import Form from "./pages/Form";
 import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
@@ -23,6 +23,7 @@ function App() {
           <Route path="*" element={<p>404 Not Found</p>} />
         </Routes>
       </main>
+      <Footer />
     </div>
   );
 }
