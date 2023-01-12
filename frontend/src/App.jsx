@@ -6,6 +6,8 @@ import Login from "./pages/Login";
 import MakeList from "./pages/MakeList";
 import Map from "./pages/Map/Map";
 import Register from "./pages/Register";
+import Panier from "./pages/Panier";
+
 import { useCurrentUserContext } from "./contexts/CurrentUserContext";
 
 import "./App.css";
