@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
-import { useCurrentUserContext } from "@contexts/CurrentUserContext";
 import { useNavigate } from "react-router-dom";
+import { useCurrentUserContext } from "../contexts/CurrentUserContext";
 
 import "./Login.css";
 
