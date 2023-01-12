@@ -69,11 +69,10 @@ export default function Register() {
     }
   };
 
-  console.log(name, email, password, customer, seller);
   return (
     <form className="login" onSubmit={handleSubmit}>
       <label htmlFor="name">
-        name:{" "}
+        Name:{" "}
         <input
           type="name"
           id="name"
