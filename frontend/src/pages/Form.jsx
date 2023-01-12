@@ -50,7 +50,7 @@ export default function Form() {
 
   return (
     <form className="form-vehicles" onSubmit={handleSubmit}>
-      <label>
+      <label className="label-form">
         kilometrage:
         <input
           className="input-form"
@@ -61,7 +61,7 @@ export default function Form() {
         />
       </label>
       <br />
-      <label>
+      <label className="label-form">
         fiche:
         <input
           className="input-form"
@@ -72,7 +72,7 @@ export default function Form() {
         />
       </label>
       <br />
-      <label>
+      <label className="label-form">
         lieu:
         <input
           className="input-form"
@@ -83,7 +83,7 @@ export default function Form() {
         />
       </label>
       <br />
-      <label>
+      <label className="label-form">
         date dispo:
         <input
           className="input-form"
@@ -94,7 +94,7 @@ export default function Form() {
         />
       </label>
       <br />
-      <label>
+      <label className="label-form">
         place:
         <input
           className="input-form"
@@ -105,7 +105,7 @@ export default function Form() {
         />
       </label>
       <br />
-      <label>
+      <label className="label-form">
         modele:
         <input
           className="input-form"
@@ -116,7 +116,7 @@ export default function Form() {
         />
       </label>
       <br />
-      <label>
+      <label className="label-form">
         makeId:
         <input
           className="input-form"
@@ -127,7 +127,7 @@ export default function Form() {
         />
       </label>
       <br />
-      <label>
+      <label className="label-form">
         vtypeId:
         <input
           className="input-form"
@@ -138,7 +138,7 @@ export default function Form() {
         />
       </label>
       <br />
-      <label>
+      <label className="label-form">
         image:
         <input
           className="input-form"
@@ -149,7 +149,9 @@ export default function Form() {
         />
       </label>
       <br />
-      <button type="submit">Submit</button>
+      <button className="btn-form-offer" type="submit">
+        Poster mon annonce
+      </button>
     </form>
   );
 }

@@ -14,17 +14,16 @@ h1 {
 
 .sign-continue {
   color: rgb(255, 255, 255);
-  font-size: 13px;
+  font-size: 15px;
   margin-top: 10px;
 }
-
-.inputs {
+.login .inputs {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.name {
+.login .name {
   display: flex;
   flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
@@ -35,7 +34,7 @@ h1 {
   align-items: flex-start;
 }
 
-#name {
+.login #email {
   border: solid #717574;
   border-radius: 16px;
   height: 3em;
@@ -44,17 +43,13 @@ h1 {
   color: white;
 }
 
-#name ::placeholder {
+.login #email::placeholder {
   color: #f6f4f6;
   padding-left: 15px;
   font-size: large;
 }
 
-::placeholder {
-  color: #f6f4f6;
-}
-
-.password {
+.login .password {
   display: flex;
   flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
@@ -65,7 +60,7 @@ h1 {
   align-items: flex-start;
 }
 
-#password {
+.login #password {
   border: solid #717574;
   border-radius: 16px;
   height: 3em;
@@ -74,13 +69,13 @@ h1 {
   color: white;
 }
 
-#password ::placeholder {
-  color: #feb06a;
+.login #password::placeholder {
+  color: #f6f4f6;
   padding-left: 15px;
   font-size: large;
 }
 
-.form {
+.login .form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -105,9 +100,41 @@ h1 {
   margin-top: 2em;
   margin-bottom: 10px;
   color: rgb(255, 255, 255);
+  font-size: 15px;
 }
 
 .sign {
   color: rgb(255, 255, 255);
   text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .sign-continue {
+    font-size: 25px;
+  }
+
+  .login .name {
+    margin-top: 25px;
+  }
+  .login #email {
+    width: 80em;
+    margin-top: 5px;
+  }
+
+  .login .password {
+    margin-top: 25px;
+  }
+
+  .login #password {
+    width: 80em;
+    margin-top: 5px;
+  }
+
+  .log-in {
+    width: 60em;
+  }
+
+  .forget {
+    font-size: 25px;
+  }
 }

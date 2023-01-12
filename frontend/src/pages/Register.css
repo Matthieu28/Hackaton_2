@@ -5,6 +5,12 @@
   flex-direction: column;
 }
 
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 h1 {
   color: rgb(255, 255, 255);
   font-family: Arial, Helvetica, sans-serif;
@@ -18,13 +24,13 @@ h1 {
   margin-top: 10px;
 }
 
-.inputs {
+.register .inputs {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.name {
+.register .name {
   display: flex;
   flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
@@ -35,7 +41,7 @@ h1 {
   align-items: flex-start;
 }
 
-#name {
+.register #name {
   border: solid #717574;
   border-radius: 16px;
   height: 3em;
@@ -44,17 +50,13 @@ h1 {
   color: white;
 }
 
-#name ::placeholder {
+.register #name::placeholder {
   color: #f6f4f6;
   padding-left: 15px;
   font-size: large;
 }
 
-::placeholder {
-  color: #f6f4f6;
-}
-
-.email {
+.register .email {
   display: flex;
   flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
@@ -65,7 +67,7 @@ h1 {
   align-items: flex-start;
 }
 
-#email {
+.register #email {
   border: solid #717574;
   border-radius: 16px;
   height: 3em;
@@ -74,13 +76,13 @@ h1 {
   color: white;
 }
 
-#email ::placeholder {
+.register #email::placeholder {
   color: #f6f4f6;
   padding-left: 15px;
   font-size: large;
 }
 
-.password {
+.register .password {
   display: flex;
   flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
@@ -91,7 +93,7 @@ h1 {
   align-items: flex-start;
 }
 
-#password {
+.register #password {
   border: solid #717574;
   border-radius: 16px;
   height: 3em;
@@ -100,8 +102,8 @@ h1 {
   color: white;
 }
 
-#password ::placeholder {
-  color: #feb06a;
+.register #password::placeholder {
+  color: white;
   padding-left: 15px;
   font-size: large;
 }
@@ -129,7 +131,7 @@ h1 {
 #seller {
   margin-top: 5px;
 }
-.form {
+.register .form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -148,6 +150,8 @@ h1 {
   background-color: #feb06a;
   margin-top: 2.5em;
   font-weight: bold;
+  /* position: relative;
+  left: 8em; */
 }
 
 .account {
@@ -159,4 +163,44 @@ h1 {
 .log {
   color: rgb(255, 255, 255);
   text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .register .name {
+    margin-top: 25px;
+  }
+
+  .register #name {
+    width: 80em;
+  }
+
+  .register .email {
+    margin-top: 25px;
+  }
+
+  .register #email {
+    width: 80em;
+  }
+
+  .register .password {
+    margin-top: 25px;
+  }
+
+  .register #password {
+    width: 80em;
+  }
+
+  .case {
+    position: relative;
+    left: 33.5em;
+  }
+
+  .sign-up {
+    width: 60em;
+  }
 }
