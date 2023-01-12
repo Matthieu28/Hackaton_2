@@ -6,7 +6,7 @@
   position: relative;
   width: 100%;
   min-height: 75px;
-  color: #feb06a;
+  background-color: #feb06a;
 }
 
 .navbar__links {
@@ -166,10 +166,11 @@ input:checked + .slider:before {
   }
   .navbar {
     display: flex;
-    background-color: #e8b97e;
-    height: 12rem;
+    background-color: #feb06a;
     position: relative;
     background-image: url(../assets/waves.png);
+    flex-direction: row-reverse;
+    align-items: flex-end;
   }
   .show-darkMode .navbar {
     background-image: url(../assets/darkwaves.png);
@@ -208,6 +209,7 @@ input:checked + .slider:before {
   }
 
   #li a {
+    font-size: 2em;
     text-decoration: none;
     color: black;
   }

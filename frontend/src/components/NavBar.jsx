@@ -1,4 +1,5 @@
 import profil from "@assets/profil.png";
+import logo from "@assets/logo-wildCarZzz.png";
 import { useCurrentUserContext } from "../contexts/CurrentUserContext";
 import Header from "./Header";
 
@@ -8,15 +9,19 @@ export default function NavBar() {
   const { currentUser } = useCurrentUserContext();
 
   return (
-    <ul className="navbar">
-      <h2>Wild CarZzz</h2>
+    <div className="navbar">
       <div className="bottom-nav">
-        <p>
-          <img src={profil} alt="Logo user" width="30px" height="30px" />
-          {currentUser.name}
-        </p>
+        <img src={logo} alt="logo" id="logo-car" />
         <Header />
       </div>
-    </ul>
+      <ul className="navbar-user">
+          <img src={profil} alt="Logo user" width="30px" height="30px" />
+        <p>
+          Welcome,<p></p>
+
+          {currentUser.name}
+        </p>
+      </ul>
+    </div>
   );
 }
