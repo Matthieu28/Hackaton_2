@@ -16,6 +16,8 @@ export default function Form() {
     makeId: "",
     vtypeId: "",
     image: "",
+    prix: "",
+    entreprise: "",
   });
 
   const handleChange = (event) => {
@@ -51,7 +53,7 @@ export default function Form() {
   return (
     <form className="form-vehicles" onSubmit={handleSubmit}>
       <label className="label-form">
-        kilometrage:
+        Mileage :
         <input
           className="input-form"
           type="number"
@@ -62,7 +64,7 @@ export default function Form() {
       </label>
       <br />
       <label className="label-form">
-        fiche:
+        Information :
         <input
           className="input-form"
           type="text"
@@ -73,7 +75,7 @@ export default function Form() {
       </label>
       <br />
       <label className="label-form">
-        lieu:
+        Location :
         <input
           className="input-form"
           type="text"
@@ -84,7 +86,7 @@ export default function Form() {
       </label>
       <br />
       <label className="label-form">
-        date dispo:
+        Available date :
         <input
           className="input-form"
           type="text"
@@ -95,7 +97,7 @@ export default function Form() {
       </label>
       <br />
       <label className="label-form">
-        place:
+        Number of places :
         <input
           className="input-form"
           type="number"
@@ -106,7 +108,7 @@ export default function Form() {
       </label>
       <br />
       <label className="label-form">
-        modele:
+        Model :
         <input
           className="input-form"
           type="text"
@@ -117,7 +119,7 @@ export default function Form() {
       </label>
       <br />
       <label className="label-form">
-        makeId:
+        Make type :
         <input
           className="input-form"
           type="number"
@@ -128,7 +130,7 @@ export default function Form() {
       </label>
       <br />
       <label className="label-form">
-        vtypeId:
+        Vehicle type :
         <input
           className="input-form"
           type="number"
@@ -139,7 +141,7 @@ export default function Form() {
       </label>
       <br />
       <label className="label-form">
-        image:
+        Image :
         <input
           className="input-form"
           type="text"
@@ -149,8 +151,30 @@ export default function Form() {
         />
       </label>
       <br />
+      <label className="label-form">
+        Price :
+        <input
+          className="input-form"
+          type="number"
+          name="prix"
+          value={formData.prix}
+          onChange={handleChange}
+        />
+      </label>
+      <br />
+      <label className="label-form">
+        Company :
+        <input
+          className="input-form"
+          type="text"
+          name="entreprise"
+          value={formData.entreprise}
+          onChange={handleChange}
+        />
+      </label>
+      <br />
       <button className="btn-form-offer" type="submit">
-        Poster mon annonce
+        Add to catalog
       </button>
     </form>
   );
