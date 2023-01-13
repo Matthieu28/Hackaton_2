@@ -1,7 +1,10 @@
 import React from "react";
-// import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
 import { GoogleMap, LoadScript } from "@react-google-maps/api";
 
+// const { isLoaded } = useJsApiLoader({
+//   id: "google-map-script",
+//   googleMapsApiKey: `${import.meta.env.VITE_API_KEY_MAP}`,
+// });
 const containerStyle = {
   width: "auto",
   height: "400px",
@@ -13,11 +16,6 @@ const center = {
 };
 
 function MyMap() {
-  // const { isLoaded } = useJsApiLoader({
-  //   id: "google-map-script",
-  //   googleMapsApiKey: `${import.meta.env.VITE_API_KEY_MAP}`,
-  // });
-
   // const [map, setMap] = React.useState(null);
 
   // const onLoad = React.useCallback(function callback(gMap) {
@@ -34,7 +32,7 @@ function MyMap() {
   //   setMap(null);
   // }, []);
 
-  // return isLoaded ? (
+  // return  (
   //   <GoogleMap
   //     mapContainerStyle={containerStyle}
   //     center={center}
@@ -45,14 +43,12 @@ function MyMap() {
   //     {/* Child components, such as markers, info windows, etc. */}
   //   </GoogleMap>
   // ) : (
-  //   <h1>Loading...</h1>
+  //   <h1>Loadeur</h1>
   // );
 
   return (
     <LoadScript googleMapsApiKey={`${import.meta.env.VITE_API_KEY_MAP}`}>
-      <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={5}>
-        <p>Hello</p>
-      </GoogleMap>
+      <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={18} />
     </LoadScript>
   );
 }
