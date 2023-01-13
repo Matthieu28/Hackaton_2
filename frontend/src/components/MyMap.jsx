@@ -1,10 +1,7 @@
 import React from "react";
+import "./MyMap.css";
 import { GoogleMap, LoadScript } from "@react-google-maps/api";
 
-// const { isLoaded } = useJsApiLoader({
-//   id: "google-map-script",
-//   googleMapsApiKey: `${import.meta.env.VITE_API_KEY_MAP}`,
-// });
 const containerStyle = {
   width: "auto",
   height: "400px",
@@ -18,9 +15,11 @@ const center = {
 function MyMap() {
   return (
     <LoadScript googleMapsApiKey={`${import.meta.env.VITE_API_KEY_MAP}`}>
-      <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={5}>
-        <p>Hello</p>
-      </GoogleMap>
+      <div className="gMap">
+        <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={5}>
+          <p>Hello</p>
+        </GoogleMap>
+      </div>
     </LoadScript>
   );
 }
