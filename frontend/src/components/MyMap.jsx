@@ -15,7 +15,7 @@ const center = {
 function MyMap() {
   return (
     <LoadScript googleMapsApiKey={`${import.meta.env.VITE_API_KEY_MAP}`}>
-      <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={5}>
+      <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={17}>
         <p>Hello</p>
       </GoogleMap>
     </LoadScript>
