@@ -1,0 +1,264 @@
+.container-home {
+  width: auto;
+  height: auto;
+}
+
+.nav-home {
+  width: 100%;
+  display: flex;
+  padding-left: 2em;
+  padding-right: 4em;
+  justify-content: space-between;
+}
+
+.container-title {
+  margin-left: 1em;
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+}
+
+.vehicle-card {
+  margin: 1em;
+  margin-top: 3em;
+  display: flex;
+}
+
+.mobile-home {
+  display: flex;
+}
+
+.vehicle-card-left {
+  padding: 0.5em;
+  background-color: #feb06a;
+  border-radius: 15px;
+  height: 14em;
+  width: 12em;
+}
+
+.title-card {
+  margin-top: 1.5em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.title-vehicle {
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+.vehicle-card-right {
+  background-color: rgb(255, 242, 242);
+  border-top-right-radius: 15px 15px;
+  border-bottom-right-radius: 15px 15px;
+  height: 12em;
+  width: 13em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 0.5em;
+}
+
+.info-vehicle {
+  margin-bottom: 0em;
+  height: 7em;
+  text-indent: 8px;
+  overflow: scroll;
+}
+
+.voir-plus {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
+  color: purple;
+  text-decoration: underline;
+  margin-bottom: 0.5em;
+  padding-right: 1em;
+  cursor: pointer;
+}
+
+.voir-plus:hover {
+  color: rgb(0, 0, 168);
+}
+
+.button-card-info {
+  border-radius: 8px;
+  font-weight: bold;
+  width: 100%;
+  height: 2em;
+  border: none;
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+}
+
+.button-card-info:hover {
+  background-color: rgb(68, 68, 68);
+}
+
+.pc-home {
+  display: none;
+}
+
+.first-box-vehicle {
+  display: flex;
+  border-top-left-radius: 15px 15px;
+  border-top-right-radius: 15px 15px;
+  background-color: rgb(255, 242, 242);
+  height: 15em;
+  width: 70em;
+}
+
+.first-box-inside,
+.second-box-inside,
+.third-box-inside {
+  width: calc(100% / 3);
+  height: 100%;
+  padding: 0.5em;
+  text-align: center;
+}
+
+.first-box-inside {
+  padding-top: 0.8em;
+}
+
+.line {
+  width: 1px;
+  background-color: rgb(213, 213, 213);
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.title-vehicle2 {
+  color: black;
+  font-weight: bold;
+}
+
+.fiche-box-height {
+  width: 100%;
+  height: 50%;
+  margin-top: 1.5em;
+  overflow: scroll;
+  text-align: left;
+  text-indent: 10px;
+  overflow-x: hidden;
+}
+
+.more-box-height {
+  height: 40%;
+  width: 100%;
+  margin-top: 1em;
+  text-align: left;
+}
+
+.more-box-height > span {
+  font-weight: bold;
+}
+
+.second-box-vehicle {
+  background-color: #feb06a;
+  height: 4em;
+  width: 70em;
+  border-bottom-left-radius: 15px 15px;
+  border-bottom-right-radius: 15px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.second-box-vehicle > p {
+  font-size: 20px;
+  margin-left: 1em;
+}
+
+.second-box-vehicle > p > span {
+  font-weight: bold;
+}
+
+.button_addToCart {
+  margin-right: 1em;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 20px;
+  width: 15%;
+  height: 2em;
+  border: none;
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+}
+
+.button_addToCart:hover {
+  background-color: rgb(68, 68, 68);
+}
+
+.third-box-inside {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.date-lieu-box {
+  text-align: left;
+  margin-top: 2em;
+}
+
+.date-lieu-box > p {
+  text-indent: 15px;
+  font-size: 20px;
+}
+
+.date-lieu-box > p > span {
+  font-weight: bold;
+}
+
+.price-per-day {
+  margin-top: 2em;
+}
+
+.price-per-day > span {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.voir-plus2 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
+  color: purple;
+  text-decoration: underline;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  padding-right: 1em;
+  cursor: pointer;
+}
+
+.voir-plus2:hover {
+  color: rgb(0, 0, 168);
+}
+
+@media (min-width: 501px) {
+  .container-home {
+    width: 100%;
+  }
+
+  .vehicle-card {
+    justify-content: center;
+  }
+
+  .makes-grid {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mobile-home {
+    display: none;
+  }
+
+  .pc-home {
+    display: block;
+  }
+}

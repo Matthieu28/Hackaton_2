@@ -1,26 +1,35 @@
-import { Routes, Route } from "react-router-dom";
-
-import NavBar from "@components/NavBar";
-import Home from "@pages/Home";
-import Login from "@pages/Login";
-import MakeList from "@pages/MakeList";
-import { useCurrentUserContext } from "./contexts/CurrentUserContext";
+import { Routes, Route, useLocation } from "react-router-dom";
+import Footer from "./components/Footer";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import Catalog from "./pages/Catalog";
+import Map from "./pages/Map/Map";
+import Panier from "./pages/Panier";
+import Form from "./pages/Form";
+import NavBar from "./components/NavBar";
+import Accueil from "./pages/Accueil";
 
 import "./App.css";
 
 function App() {
-  const { currentUser } = useCurrentUserContext();
+  const { pathname } = useLocation();
   return (
     <div className="App">
-      <NavBar />
+      {pathname !== "/" && <NavBar />}
       <main>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Accueil />} />
           <Route path="/login" element={<Login />} />
-          {currentUser.id && <Route path="/makes" element={<MakeList />} />}
+          <Route path="/register" element={<Register />} />
+          <Route path="/myShopping" element={<Panier />} />
+          <Route path="/catalog" element={<Catalog />} />
+          <Route path="/panier" element={<Panier />} />
+          <Route path="/map" element={<Map />} />
+          <Route path="/form" element={<Form />} />
           <Route path="*" element={<p>404 Not Found</p>} />
         </Routes>
       </main>
+      <Footer />
     </div>
   );
 }

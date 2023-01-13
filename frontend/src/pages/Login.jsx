@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
-import { useCurrentUserContext } from "@contexts/CurrentUserContext";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
+import { useCurrentUserContext } from "../contexts/CurrentUserContext";
 
 import "./Login.css";
 
@@ -36,7 +36,7 @@ export default function Login() {
         )
         .then(({ data }) => {
           setCurrentUser(data);
-          navigate("/makes");
+          navigate("/catalog");
         })
         .catch((err) => {
           console.error(err);
@@ -46,29 +46,40 @@ export default function Login() {
 
   return (
     <form className="login" onSubmit={handleSubmit}>
-      <label htmlFor="email">
-        Email:{" "}
-        <input
-          type="email"
-          id="email"
-          required
-          placeholder="example@mail.com"
-          value={email}
-          onChange={handleChangeEmail}
-        />
-      </label>
-      <label htmlFor="password">
-        Password:{" "}
-        <input
-          type="password"
-          id="password"
-          required
-          placeholder="Your password"
-          value={password}
-          onChange={handleChangePassword}
-        />
-      </label>
-      <button type="submit">Login</button>
+      <h1 className="title-log">Login</h1>
+      <p className="sign-continue">Sign to continue.</p>
+      <div className="inputs">
+        <label htmlFor="name" className="name">
+          Email:{" "}
+          <input
+            type="name"
+            id="email"
+            required
+            placeholder="Your user"
+            value={email}
+            onChange={handleChangeEmail}
+          />
+        </label>
+        <label htmlFor="password" className="password">
+          Password:{" "}
+          <input
+            type="password"
+            id="password"
+            required
+            placeholder="Your password"
+            value={password}
+            onChange={handleChangePassword}
+          />
+        </label>
+        <button type="submit" className="log-in">
+          Log in
+        </button>
+      </div>
+      <div>
+        <Link to="/Register" className="sign">
+          Sign up !
+        </Link>
+      </div>
     </form>
   );
 }

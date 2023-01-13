@@ -1,0 +1,86 @@
+.panier {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.titrePanier {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  color: white;
+  border-bottom: solid 1px white;
+  border-width: 20%;
+}
+
+.imageDeVoiture img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10em;
+  margin: 0 auto;
+  margin-top: 1em;
+}
+
+.nomVoiture {
+  color: white;
+}
+
+.buttonOne {
+  background-color: orange;
+  width: 11em;
+  height: 3.5em;
+  margin: 0.5em;
+}
+
+.buttonOne:hover {
+  z-index: 150px;
+}
+
+.buttonTwo:hover {
+  z-index: 150px;
+}
+
+.buttonTwo {
+  width: 11em;
+  height: 3.5em;
+  margin: 0.5em;
+}
+
+.allButton {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid white;
+}
+
+.barreDenBas {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 25%;
+  width: 25%;
+  padding-top: 100%;
+}
+
+.carteDeSesMorts {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 502px) {
+  .carteDeSesMorts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .barreDenBas {
+    display: flex;
+    border: 1px solid red;
+    justify-content: center;
+    align-items: center;
+  }
+}

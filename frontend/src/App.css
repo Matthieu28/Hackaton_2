@@ -10,7 +10,8 @@ body {
 }
 
 body {
-  background-color: antiquewhite;
+  overflow-x: hidden;
+  background-color: #1b1b1b;
 }
 
 main {

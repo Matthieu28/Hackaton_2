@@ -1,0 +1,165 @@
+.globalContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.principal-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.presentation-txt {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2em;
+  align-items: center;
+  color: white;
+}
+
+#button-login {
+  width: 10em;
+  padding: 1em;
+  text-decoration: none;
+  color: black;
+  border-radius: 16px;
+  background-color: #feb06a;
+}
+
+#logoCar {
+  width: 100%;
+  background-color: #feb06a;
+}
+
+.carousel-overall {
+  margin: 0;
+}
+
+.title {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.presChef {
+  color: #c1694f;
+  text-align: justify;
+  margin: 10px;
+  justify-content: center;
+  display: flex;
+}
+
+.img-container-fluid {
+  border-radius: 10px;
+  height: 275px;
+  width: 300px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #c1694f;
+}
+
+.img-container-fluid.blur {
+  filter: blur(3px);
+  height: 150px;
+  border: 3px solid #e8b97e;
+  cursor: pointer;
+}
+
+.div-container-fluid {
+  position: relative;
+}
+.div-container-fluid p {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -48.5%);
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  height: 365px;
+  width: 400px;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.div-container-fluid p.show {
+  opacity: 0.9;
+  color: #000000;
+  background-color: #e8b87e;
+  border-radius: 7px;
+  transition: all 0.2s ease-in-out;
+  height: 269.9px;
+  width: 295px;
+  padding: 15px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  #logoCar {
+    width: 20%;
+  }
+
+  .principal-div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo-sizing {
+    display: flex;
+    justify-content: center;
+    background-color: #feb06a;
+  }
+
+  .globalContainer {
+    justify-content: space-around;
+  }
+  .ChefText {
+    color: black;
+    font-size: 40px;
+  }
+  .presChef {
+    font-size: 20px;
+  }
+  .container {
+    flex-direction: row;
+    width: auto;
+    gap: 1rem;
+  }
+
+  .img-container-fluid {
+    border-radius: 10px;
+    height: 500px;
+    width: 650px;
+  }
+  .img-container-fluid.blur {
+    height: 150px;
+    width: 250px;
+  }
+  .div-container-fluid p {
+    top: 46.5%;
+    height: 690px;
+    width: 700px;
+  }
+  .div-container-fluid p.show {
+    height: 495px;
+    width: 644px;
+    opacity: 0.9;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+}

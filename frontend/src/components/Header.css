@@ -1,0 +1,232 @@
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+  position: relative;
+  width: 100%;
+  min-height: 75px;
+  background-color: #feb06a;
+}
+
+.navbar__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  top: -100vh;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  padding: 2rem;
+  visibility: hidden;
+  background-color: #feb06a;
+  z-index: 1000;
+  list-style: none;
+}
+.show-darkMode .navbar__links {
+  background-color: #2b2e2b;
+  color: #990505;
+}
+
+.show-nav .navbar__links {
+  top: 0;
+  right: 0;
+  width: 100%;
+  visibility: visible;
+  background-color: #feb06a;
+  color: #c1694f;
+}
+
+.navbar__link {
+  display: block;
+  font-size: 9vw;
+  color: inherit;
+  font-weight: lighter;
+}
+.navbar__burger {
+  display: block;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  padding: 5px;
+  background: none;
+  border: none;
+  border-radius: 100%;
+  z-index: 1001;
+}
+.navbar__burger:hover {
+  cursor: pointer;
+}
+.burger__bar,
+.burger__bar::before,
+.burger__bar::after {
+  display: block;
+  width: 10px;
+  height: 10px;
+  position: relative;
+  border-radius: 100%;
+  background-color: white;
+  transition: all 0.5s ease-in-out;
+}
+.burger__bar::before,
+.burger__bar::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+.burger__bar::before {
+  transform: translateX(-12px);
+}
+.burger__bar::after {
+  transform: translateX(12px);
+}
+.show-nav .burger__bar::before {
+  transform: translate(-12px, -12px);
+}
+.show-nav .burger__bar::after {
+  transform: translate(12px, 12px);
+}
+.slideInDown {
+  transition: all 1.5s ease-in-out;
+}
+#pcnav {
+  display: none;
+}
+.navbarmenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.navbar__links a {
+  text-decoration: none;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 39px;
+  height: 23px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 1.5px;
+  background-color: #f2f2f2;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+input:checked + .slider {
+  background-color: #545454;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #c1694f;
+}
+.dark input:focus + .slider {
+  box-shadow: 0 0 1px #990505;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+@media screen and (min-width: 500px) {
+  #telnav {
+    display: none;
+  }
+  #pcnav {
+    display: initial;
+  }
+  .navbar {
+    display: flex;
+    margin-bottom: 5.1em;
+    background-color: #feb06a;
+    position: relative;
+    background-image: url(../assets/waves.png);
+    flex-direction: row-reverse;
+    align-items: flex-end;
+  }
+  .navbar img {
+    width: 100%;
+  }
+
+  .container-href {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    border: none;
+    gap: 25rem;
+    font-size: 1rem;
+  }
+  #li {
+    display: flex;
+    gap: 6rem;
+    list-style: none;
+  }
+  #li :hover {
+    color: #c1694f;
+  }
+
+  #li2 {
+    display: flex;
+    gap: 10rem;
+    list-style: none;
+  }
+  #li2 :hover {
+    color: #c1694f;
+  }
+
+  #li a {
+    font-size: 2em;
+    text-decoration: none;
+    color: black;
+  }
+  #li2 a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .switch {
+    margin-left: 8.5rem;
+    height: 40px;
+    width: 70px;
+  }
+  .slider:before {
+    height: 30px;
+    width: 30px;
+    left: 3px;
+    bottom: 4px;
+  }
+  input:checked + .slider:before {
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
+  }
+}

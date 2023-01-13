@@ -10,6 +10,7 @@
     "fix": "prettier --write . && eslint --fix --ext .jsx ."
   },
   "dependencies": {
+    "@react-google-maps/api": "^2.17.1",
     "axios": "^1.2.1",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",

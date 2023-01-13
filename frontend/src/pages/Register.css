@@ -1,0 +1,217 @@
+.formulaire {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  font-size: 3em;
+}
+
+.sign-register {
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.register .inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register .name {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  gap: 0.4em;
+  color: rgb(255, 255, 255);
+  margin-top: 30px;
+  align-items: flex-start;
+}
+
+.register #name {
+  border: solid #717574;
+  border-radius: 16px;
+  height: 3em;
+  width: 17em;
+  background-color: #717574;
+  color: white;
+  padding: 15px;
+}
+
+.register #name::placeholder {
+  color: #f6f4f6;
+  padding-left: 15px;
+  font-size: large;
+}
+
+.register .email {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  gap: 0.4em;
+  color: rgb(255, 255, 255);
+  margin-top: 30px;
+  align-items: flex-start;
+}
+
+.register #email {
+  border: solid #717574;
+  border-radius: 16px;
+  height: 3em;
+  width: 17em;
+  background-color: #717574;
+  color: white;
+  padding-left: 15px;
+}
+
+.register #email::placeholder {
+  color: #f6f4f6;
+  padding-left: 15px;
+  font-size: large;
+}
+
+.register .password {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  gap: 0.4em;
+  color: rgb(255, 255, 255);
+  margin-top: 30px;
+  align-items: flex-start;
+}
+
+.register #password {
+  border: solid #717574;
+  border-radius: 16px;
+  height: 3em;
+  width: 17em;
+  background-color: #717574;
+  color: white;
+  padding-left: 15px;
+}
+
+.register #password::placeholder {
+  color: white;
+  padding-left: 15px;
+  font-size: large;
+}
+
+.case {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  left: 75px;
+}
+
+.customer {
+  margin-top: 15px;
+}
+
+#customer {
+  margin-top: 5px;
+}
+
+.seller {
+  margin-top: 10px;
+}
+
+#seller {
+  margin-top: 5px;
+}
+.register .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2em;
+}
+
+.sign-up {
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #feb06a;
+  border-radius: 7px;
+  font-size: 15px;
+  color: #1c2120;
+  height: 3em;
+  width: 14em;
+  background-color: #feb06a;
+  margin-top: 2.5em;
+  font-weight: bold;
+  /* position: relative;
+  left: 8em; */
+}
+
+.account {
+  margin-top: 1.5em;
+  margin-bottom: 10px;
+  color: rgb(255, 255, 255);
+}
+
+.log {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sign-register {
+    font-size: 25px;
+  }
+  .register .name {
+    margin-top: 25px;
+  }
+
+  .register #name {
+    width: 80em;
+  }
+
+  .register .email {
+    margin-top: 25px;
+  }
+
+  .register #email {
+    width: 80em;
+  }
+
+  .register .password {
+    margin-top: 25px;
+  }
+
+  .register #password {
+    width: 80em;
+  }
+
+  .case {
+    position: relative;
+    left: 33.5em;
+  }
+
+  .sign-up {
+    width: 60em;
+  }
+
+  .account {
+    font-size: 25px;
+  }
+}

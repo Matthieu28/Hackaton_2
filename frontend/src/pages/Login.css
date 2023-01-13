@@ -1,42 +1,135 @@
-form.login {
+.login {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  /* width: 50%; */
-  background-color: cyan;
-  border-radius: 1rem;
-  padding: 1rem;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-  font-size: xx-large;
-}
-
-form.login label {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0.5rem;
-}
-
-form.login label input,
-form.login button {
-  margin-top: 0.5rem;
-  font-size: inherit;
-  padding: 0.5rem 1rem;
-  border-radius: inherit;
   text-align: center;
+  flex-direction: column;
+  margin-bottom: 10em;
+  margin-top: 6em;
 }
 
-form.login button {
-  cursor: pointer;
-  background-color: rgb(0, 203, 14);
-  border: none;
-  transition: box-shadow 0.2s, transform 0.2s;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2), -5px 5px 5px rgba(0, 0, 0, 0.2);
+h1 {
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  font-size: 3em;
+  margin-top: 15px;
 }
 
-form.login button:hover {
-  transform: scale(1.1);
-  transition: box-shadow 0.5s, transform 0.5s;
+.sign-continue {
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  margin-top: 10px;
+}
+.login .inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login .name {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  gap: 0.4em;
+  color: rgb(255, 255, 255);
+  margin-top: 30px;
+  align-items: flex-start;
+}
+
+.login #email {
+  border: solid #717574;
+  border-radius: 16px;
+  height: 3em;
+  width: 17em;
+  background-color: #717574;
+  color: white;
+  padding-left: 15px;
+}
+
+.login #email::placeholder {
+  color: #f6f4f6;
+  padding-left: 15px;
+  font-size: large;
+}
+
+.login .password {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  gap: 0.4em;
+  color: rgb(255, 255, 255);
+  margin-top: 10px;
+  align-items: flex-start;
+}
+
+.login #password {
+  border: solid #717574;
+  border-radius: 16px;
+  height: 3em;
+  width: 17em;
+  background-color: #717574;
+  color: white;
+  padding: 15px;
+}
+
+.login #password::placeholder {
+  color: #f6f4f6;
+  padding-left: 15px;
+  font-size: large;
+}
+
+.login .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2em;
+}
+
+.log-in {
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid #feb06a;
+  border-radius: 7px;
+  font-size: 15px;
+  color: #1c2120;
+  height: 3em;
+  width: 14em;
+  background-color: #feb06a;
+  margin-top: 3em;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.sign {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .sign-continue {
+    font-size: 25px;
+  }
+
+  .login .name {
+    margin-top: 25px;
+  }
+  .login #email {
+    width: 80em;
+    margin-top: 5px;
+  }
+
+  .login .password {
+    margin-top: 25px;
+  }
+
+  .login #password {
+    width: 80em;
+    margin-top: 5px;
+  }
+
+  .log-in {
+    width: 60em;
+  }
 }
