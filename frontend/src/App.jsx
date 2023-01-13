@@ -15,16 +15,16 @@ function App() {
   const { pathname } = useLocation();
   return (
     <div className="App">
-      {pathname !== "/accueil" && <NavBar />}
+      {pathname !== "/" && <NavBar />}
       <main>
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route path="/" element={<Accueil />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/catalog" element={<Catalog />} />
           <Route path="/panier" element={<Panier />} />
           <Route path="/map" element={<Map />} />
           <Route path="/form" element={<Form />} />
-          <Route path="/accueil" element={<Accueil />} />
           <Route path="*" element={<p>404 Not Found</p>} />
         </Routes>
       </main>

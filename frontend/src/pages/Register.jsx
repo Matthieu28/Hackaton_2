@@ -62,7 +62,7 @@ export default function Register() {
         )
         .then(({ data }) => {
           setCurrentUser(data);
-          navigate("/");
+          navigate("/login");
         })
         .catch((err) => {
           console.error(err);

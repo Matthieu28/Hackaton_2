@@ -36,7 +36,7 @@ export default function Login() {
         )
         .then(({ data }) => {
           setCurrentUser(data);
-          navigate("/home");
+          navigate("/catalog");
         })
         .catch((err) => {
           console.error(err);
@@ -50,7 +50,7 @@ export default function Login() {
       <p className="sign-continue">Sign to continue.</p>
       <div className="inputs">
         <label htmlFor="name" className="name">
-          Name:{" "}
+          Email:{" "}
           <input
             type="name"
             id="email"
