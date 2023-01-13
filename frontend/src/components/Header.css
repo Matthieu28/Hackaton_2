@@ -166,6 +166,7 @@ input:checked + .slider:before {
   }
   .navbar {
     display: flex;
+    margin-bottom: 5.1em;
     background-color: #feb06a;
     position: relative;
     background-image: url(../assets/waves.png);
