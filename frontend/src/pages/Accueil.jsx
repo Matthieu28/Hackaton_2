@@ -104,10 +104,10 @@ const Accueil = () => {
             <div className="presentation-txt">
               <h2>Presentation</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Doloribus, voluptas deserunt dolores qui eum nam veritatis earum
-                quia voluptate quaerat architecto quos nisi laborum commodi
-                explicabo dolor rem repellat saepe!
+                Wild CarZzz, an innovative site allowing everyone to access
+                vehicles from all over the world. Whether for professional or
+                private purposes, we provide vehicles that will meet all your
+                needs.
               </p>
               <Link to="/login" id="button-login">
                 Login Or Register
