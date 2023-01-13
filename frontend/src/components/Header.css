@@ -173,16 +173,10 @@ input:checked + .slider:before {
     flex-direction: row-reverse;
     align-items: flex-end;
   }
-  .show-darkMode .navbar {
-    background-image: url(../assets/darkwaves.png);
-  }
   .navbar img {
     width: 100%;
   }
-  .show-darkMode .container-href {
-    background-color: #2b2e2b;
-    border: none;
-  }
+
   .container-href {
     display: flex;
     width: 100%;

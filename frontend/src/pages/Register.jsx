@@ -62,7 +62,7 @@ export default function Register() {
         )
         .then(({ data }) => {
           setCurrentUser(data);
-          navigate("/");
+          navigate("/login");
         })
         .catch((err) => {
           console.error(err);
@@ -140,7 +140,7 @@ export default function Register() {
 
       <p className="account">Already have account ?</p>
       <div>
-        <Link to="/" className="log">
+        <Link to="/login" className="log">
           Login !
         </Link>
       </div>

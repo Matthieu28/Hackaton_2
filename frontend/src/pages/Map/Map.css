@@ -17,6 +17,13 @@
 .para-map {
   color: white;
   text-align: center;
+  line-height: 1.5;
+  font-size: 5vw;
+}
+
+.picture-map {
+  margin-top: 5rem;
+  height: 17rem;
   line-height: 1;
   padding: 1rem;
   font-size: 5vw;
