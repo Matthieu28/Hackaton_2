@@ -36,10 +36,8 @@
   background: #d6d6d6;
 }
 
-
-
 @media (min-width: 501px) {
-  .para-map{
-  font-size: 1rem;
-}
+  .para-map {
+    font-size: 1rem;
+  }
 }

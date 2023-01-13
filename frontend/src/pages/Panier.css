@@ -35,11 +35,11 @@
   margin: 0.5em;
 }
 
-.buttonOne:hover{
+.buttonOne:hover {
   z-index: 150px;
 }
 
-.buttonTwo:hover{
+.buttonTwo:hover {
   z-index: 150px;
 }
 
@@ -71,13 +71,13 @@
   flex-direction: column;
 }
 
-@media screen and (min-width:502px) {
-  .carteDeSesMorts{
+@media screen and (min-width: 502px) {
+  .carteDeSesMorts {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
-  .barreDenBas{
+  .barreDenBas {
     display: flex;
     border: 1px solid red;
     justify-content: center;

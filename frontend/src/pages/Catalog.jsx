@@ -119,6 +119,7 @@ export default function Catalog() {
                 </div>
                 <div className="vehicle-card-right">
                   <div className="info-vehicle">{make.fiche}</div>
+                  <div className="voir-plus">See More v</div>
                   <button type="button" className="button-card-info">
                     Add to cart
                   </button>
@@ -154,7 +155,6 @@ export default function Catalog() {
                       <span>Number of places : </span>
                       {make.place}
                       <br />
-                      <span>Availablity : </span>
                     </div>
                   </div>
                   <div className="line" />
@@ -170,6 +170,7 @@ export default function Catalog() {
                     <div className="price-per-day">
                       <span>Price : {make.prix}$ / day</span>
                     </div>
+                    <div className="voir-plus2">See More v</div>
                   </div>
                 </div>
                 <div className="second-box-vehicle">
