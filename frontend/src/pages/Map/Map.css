@@ -17,6 +17,7 @@
   color: white;
   text-align: center;
   line-height: 1.5;
+  font-size: 5vw;
 }
 
 .picture-map {
@@ -29,3 +30,4 @@
   height: 400px;
   background: #d6d6d6;
 }
+
