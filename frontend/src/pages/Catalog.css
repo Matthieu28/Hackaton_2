@@ -33,17 +33,21 @@
   background-color: #feb06a;
   border-radius: 15px;
   height: 14em;
+  width: 12em;
 }
 
 .title-card {
   margin-top: 1.5em;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .title-vehicle {
   font-weight: bold;
   font-size: 20px;
   color: white;
+  text-align: center;
 }
 
 .vehicle-card-right {
@@ -58,10 +62,26 @@
 }
 
 .info-vehicle {
-  margin-bottom: 1em;
-  height: 8em;
+  margin-bottom: 0em;
+  height: 7em;
   text-indent: 8px;
   overflow: scroll;
+}
+
+.voir-plus {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
+  color: purple;
+  text-decoration: underline;
+  margin-bottom: 0.5em;
+  padding-right: 1em;
+  cursor: pointer;
+}
+
+.voir-plus:hover {
+  color: rgb(0, 0, 168);
 }
 
 .button-card-info {
@@ -72,6 +92,7 @@
   border: none;
   background-color: grey;
   color: white;
+  cursor: pointer;
 }
 
 .button-card-info:hover {
@@ -167,6 +188,7 @@
   border: none;
   background-color: grey;
   color: white;
+  cursor: pointer;
 }
 
 .button_addToCart:hover {
@@ -199,6 +221,23 @@
 .price-per-day > span {
   font-weight: bold;
   font-size: 25px;
+}
+
+.voir-plus2 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
+  color: purple;
+  text-decoration: underline;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  padding-right: 1em;
+  cursor: pointer;
+}
+
+.voir-plus2:hover {
+  color: rgb(0, 0, 168);
 }
 
 @media (min-width: 501px) {
