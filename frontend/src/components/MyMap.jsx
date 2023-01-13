@@ -16,36 +16,6 @@ const center = {
 };
 
 function MyMap() {
-  // const [map, setMap] = React.useState(null);
-
-  // const onLoad = React.useCallback(function callback(gMap) {
-  //   // This is just an example of getting and using the map instance!!! don't just blindly copy!
-  //   const bounds = new window.google.maps.LatLngBounds(center);
-  //   gMap.fitBounds(bounds);
-  //   // gMap.zoom = 10;
-  //   console.warn(gMap.controls);
-
-  //   setMap(map);
-  // }, []);
-
-  // const onUnmount = React.useCallback(function callback(map) {
-  //   setMap(null);
-  // }, []);
-
-  // return  (
-  //   <GoogleMap
-  //     mapContainerStyle={containerStyle}
-  //     center={center}
-  //     zoom={10}
-  //     onLoad={onLoad}
-  //     onUnmount={onUnmount}
-  //   >
-  //     {/* Child components, such as markers, info windows, etc. */}
-  //   </GoogleMap>
-  // ) : (
-  //   <h1>Loadeur</h1>
-  // );
-
   return (
     <LoadScript googleMapsApiKey={`${import.meta.env.VITE_API_KEY_MAP}`}>
       <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={18} />
