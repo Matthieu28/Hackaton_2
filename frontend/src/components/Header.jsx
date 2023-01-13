@@ -15,7 +15,7 @@ function Header() {
           <ul className="navbar__links slideInDown  ">
             <li className="navbar__item">
               <Link
-                to="/Catalog"
+                to="/catalog"
                 className="navbar__link"
                 onClick={handleShowLinks}
               >
@@ -24,7 +24,7 @@ function Header() {
             </li>
             <li className="navbar__item">
               <Link
-                to="/Map"
+                to="/map"
                 className="navbar__link"
                 onClick={handleShowLinks}
               >
@@ -33,7 +33,7 @@ function Header() {
             </li>
             <li className="navbar__item">
               <Link
-                to="/Panier"
+                to="/panier"
                 className="navbar__link"
                 onClick={handleShowLinks}
               >
