@@ -37,7 +37,7 @@ function Header() {
                 className="navbar__link"
                 onClick={handleShowLinks}
               >
-                Panier
+                MyShopping
               </Link>
             </li>
           </ul>
@@ -61,7 +61,7 @@ function Header() {
                 <Link to="/Map">Map</Link>
               </li>
               <li>
-                <Link to="/Panier">Panier</Link>
+                <Link to="/MyShopping">My Shopping</Link>
               </li>
             </ul>
           </div>

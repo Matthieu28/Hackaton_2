@@ -19,7 +19,7 @@ function App() {
           <Route path="/" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/panier" element={<Panier />} />
+          <Route path="/myShopping" element={<Panier />} />
           <Route path="/map" element={<Map />} />
           <Route path="/form" element={<Form />} />
           <Route path="*" element={<p>404 Not Found</p>} />
