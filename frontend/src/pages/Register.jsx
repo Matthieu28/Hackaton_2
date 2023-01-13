@@ -71,7 +71,7 @@ export default function Register() {
   };
 
   return (
-    <form className="login" onSubmit={handleSubmit}>
+    <form className="register" onSubmit={handleSubmit}>
       <div className="formulaire">
         <h1>Create new account</h1>
         <p className="sign-register">Already Registered? Log in here.</p>

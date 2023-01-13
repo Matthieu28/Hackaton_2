@@ -35,6 +35,14 @@
   margin: 0.5em;
 }
 
+.buttonOne:hover{
+  z-index: 150px;
+}
+
+.buttonTwo:hover{
+  z-index: 150px;
+}
+
 .buttonTwo {
   width: 11em;
   height: 3.5em;
@@ -63,10 +71,16 @@
   flex-direction: column;
 }
 
-@media screen and (min-width: 502px) {
-  .carteDeSesMorts {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    gap: 30px 5em;
+@media screen and (min-width:502px) {
+  .carteDeSesMorts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .barreDenBas{
+    display: flex;
+    border: 1px solid red;
+    justify-content: center;
+    align-items: center;
   }
 }
