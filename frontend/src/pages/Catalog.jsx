@@ -168,11 +168,14 @@ export default function Catalog() {
                       </p>
                     </div>
                     <div className="price-per-day">
-                      <span>Price : 140$ / day</span>
+                      <span>Price : {make.prix}$ / day</span>
                     </div>
                   </div>
                 </div>
                 <div className="second-box-vehicle">
+                  <p>
+                    by <span>{make.entreprise}</span>
+                  </p>
                   <button type="button" className="button_addToCart">
                     Add to cart
                   </button>

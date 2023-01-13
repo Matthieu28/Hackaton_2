@@ -144,8 +144,17 @@
   border-bottom-left-radius: 15px 15px;
   border-bottom-right-radius: 15px 15px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
+}
+
+.second-box-vehicle > p {
+  font-size: 20px;
+  margin-left: 1em;
+}
+
+.second-box-vehicle > p > span {
+  font-weight: bold;
 }
 
 .button_addToCart {
