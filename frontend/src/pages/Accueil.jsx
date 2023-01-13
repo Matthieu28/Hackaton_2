@@ -109,7 +109,7 @@ const Accueil = () => {
                 quia voluptate quaerat architecto quos nisi laborum commodi
                 explicabo dolor rem repellat saepe!
               </p>
-              <Link to="/" id="button-login">
+              <Link to="/login" id="button-login">
                 Login Or Register
               </Link>
             </div>

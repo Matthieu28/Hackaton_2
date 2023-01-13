@@ -7,7 +7,7 @@ import Map from "./pages/Map/Map";
 import Panier from "./pages/Panier";
 import Form from "./pages/Form";
 import NavBar from "./components/NavBar";
-import Home from "./pages/Accueil";
+import Accueil from "./pages/Accueil";
 
 import "./App.css";
 
@@ -15,12 +15,12 @@ function App() {
   const { pathname } = useLocation();
   return (
     <div className="App">
-      {pathname !== "/accueil" && <NavBar />}
+      {pathname !== "/" && <NavBar />}
       <main>
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route path="/" element={<Accueil />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/home" element={<Home />} />
           <Route path="/myShopping" element={<Panier />} />
           <Route path="/catalog" element={<Catalog />} />
           <Route path="/panier" element={<Panier />} />
