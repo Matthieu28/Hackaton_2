@@ -1,12 +1,13 @@
-import VoitureTest from "../assets/voiture-test.png";
+import "../pages/Panier.css";
+import VoitureTest2 from "../assets/voiture2.jpg";
 
-const PanierCard = () => {
+const PanierCard2 = () => {
   return (
     <div className="box">
       <div className="imageDeVoiture">
-        <img src={VoitureTest} alt="voituretarlesouf" />
+        <img src={VoitureTest2} alt="voituretarlesouf2" />
       </div>
-      <h1 className="nomVoiture"> PORSCHE</h1>
+      <h1 className="nomVoiture"> BUGGATI</h1>
       <div className="allButton">
         <button type="button" className="buttonOne">
           Rent
@@ -19,4 +20,4 @@ const PanierCard = () => {
   );
 };
 
-export default PanierCard;
+export default PanierCard2;

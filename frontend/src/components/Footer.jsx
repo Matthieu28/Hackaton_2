@@ -7,9 +7,9 @@ const Footer = () => {
       <img src={miniLogo} alt="" />
       <div className="footer-txt">
         <p>
-          © 2022-2023 Joryan, Théo, Matthieu, Dylan, Valentin, Enzo,. Tout
-          droits réservés. Aucune revendication de propriété du droit d'auteur
-          n'est faite sur le sous-jacent matériaux Merci de votre visite !
+          © 2022-2023 Joryan, Théo, Matthieu, Dylan, Valentin, Enzo. Straight
+          ahead reserved. No claim of copyright ownership is made on the
+          underlying materials thank you for your visit.
         </p>
       </div>
     </footer>
